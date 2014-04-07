@@ -1,0 +1,221 @@
+\hypertarget{class_tablica}{\section{\-Dokumentacja szablonu klasy \-Tablica$<$ \-Typ $>$}
+\label{class_tablica}\index{\-Tablica$<$ Typ $>$@{\-Tablica$<$ Typ $>$}}
+}
+
+
+{\ttfamily \#include $<$tablica.\-hpp$>$}
+
+
+
+\-Diagram dziedziczenia dla \-Tablica$<$ \-Typ $>$\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_tablica__inherit__graph}
+\end{center}
+\end{figure}
+
+
+\-Diagram współpracy dla \-Tablica$<$ \-Typ $>$\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{class_tablica__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_tablica_a335a030d40c416a7eaf1bf4d990cbf0b}{zmele} (int i, int j)
+\item 
+void \hyperlink{class_tablica_a36ea5cb0bb790766201f80acea48e845}{dodele} (\-Typ element)
+\item 
+void \hyperlink{class_tablica_a9a05fd018eb2142dd06760105efe96e8}{zmienkolejnosc} ()
+\item 
+void \hyperlink{class_tablica_a45f0caea929a920c29d829ada6137c79}{dodele} (const \hyperlink{class_tablica}{\-Tablica}$<$ \-Typ $>$ \&\-T1)
+\item 
+\hyperlink{class_tablica_a7d54bbcaa7963c50ee57e69f700b6cfc}{\-Tablica} ()
+\item 
+\hyperlink{class_tablica_aea2479778376598550fe82ec459a24ba}{$\sim$\-Tablica} ()
+\item 
+unsigned int \hyperlink{class_tablica_acf3f8d852711619ed205e1569f40f789}{rozmiar} () const 
+\item 
+void \hyperlink{class_tablica_aafcf1f86b79c0146fa313bae711cc97e}{zmianarozmiaru} (unsigned int nowyrozmiar)
+\item 
+\-Typ \& \hyperlink{class_tablica_a87f292495232b4f959291a3bc87bb829}{operator\mbox{[}$\,$\mbox{]}} (const unsigned int b)
+\item 
+const \-Typ \& \hyperlink{class_tablica_a5d41b52977f5bc0a3abf9e62cc209cc4}{operator\mbox{[}$\,$\mbox{]}} (const unsigned int b) const 
+\item 
+\hyperlink{class_tablica}{\-Tablica}$<$ \-Typ $>$ \& \hyperlink{class_tablica_a3626fbc8c7e54b24e7fba96b86a4173f}{operator=} (const \hyperlink{class_tablica}{\-Tablica}$<$ \-Typ $>$ \&argument)
+\item 
+bool \hyperlink{class_tablica_a5feb149bbeae655c6d7bafada90f9615}{operator==} (const \hyperlink{class_tablica}{\-Tablica}$<$ \-Typ $>$ \&argument) const 
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\-Typ $\ast$ \hyperlink{class_tablica_a8a186bd43f434e2c8b58377f6a54ab47}{\-T}
+\item 
+unsigned int \hyperlink{class_tablica_a1d87d674a1061ce4ca064d99f8714458}{dltab}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\subsubsection*{template$<$typename \-Typ$>$class Tablica$<$ Typ $>$}
+
+\-Klasa reprezentująca tablicę 
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_tablica_a7d54bbcaa7963c50ee57e69f700b6cfc}{\index{\-Tablica@{\-Tablica}!\-Tablica@{\-Tablica}}
+\index{\-Tablica@{\-Tablica}!Tablica@{\-Tablica}}
+\subsubsection[{\-Tablica}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-Typ$>$ {\bf \-Tablica}$<$ \-Typ $>$\-::{\bf \-Tablica} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_tablica_a7d54bbcaa7963c50ee57e69f700b6cfc}
+\-Konstruktor klasy \hyperlink{class_tablica}{\-Tablica}. \hypertarget{class_tablica_aea2479778376598550fe82ec459a24ba}{\index{\-Tablica@{\-Tablica}!$\sim$\-Tablica@{$\sim$\-Tablica}}
+\index{$\sim$\-Tablica@{$\sim$\-Tablica}!Tablica@{\-Tablica}}
+\subsubsection[{$\sim$\-Tablica}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-Typ$>$ {\bf \-Tablica}$<$ \-Typ $>$\-::$\sim${\bf \-Tablica} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_tablica_aea2479778376598550fe82ec459a24ba}
+\-Destruktor klasy \hyperlink{class_tablica}{\-Tablica}. 
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_tablica_a36ea5cb0bb790766201f80acea48e845}{\index{\-Tablica@{\-Tablica}!dodele@{dodele}}
+\index{dodele@{dodele}!Tablica@{\-Tablica}}
+\subsubsection[{dodele}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-Typ$>$ void {\bf \-Tablica}$<$ \-Typ $>$\-::{\bf dodele} (
+\begin{DoxyParamCaption}
+\item[{\-Typ}]{element}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_a36ea5cb0bb790766201f80acea48e845}
+
+
+\-Dodaje element do tablicy. 
+
+\hypertarget{class_tablica_a45f0caea929a920c29d829ada6137c79}{\index{\-Tablica@{\-Tablica}!dodele@{dodele}}
+\index{dodele@{dodele}!Tablica@{\-Tablica}}
+\subsubsection[{dodele}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-Typ$>$ void {\bf \-Tablica}$<$ \-Typ $>$\-::{\bf dodele} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Tablica}$<$ \-Typ $>$ \&}]{\-T1}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_a45f0caea929a920c29d829ada6137c79}
+\-Laczy 2 tablice. 
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{class_tablica_a45f0caea929a920c29d829ada6137c79_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_tablica_a3626fbc8c7e54b24e7fba96b86a4173f}{\index{\-Tablica@{\-Tablica}!operator=@{operator=}}
+\index{operator=@{operator=}!Tablica@{\-Tablica}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-Typ$>$ {\bf \-Tablica}$<$ \-Typ $>$ \& {\bf \-Tablica}$<$ \-Typ $>$\-::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Tablica}$<$ \-Typ $>$ \&}]{argument}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_a3626fbc8c7e54b24e7fba96b86a4173f}
+\-Przeciazenie operatora przypisywania. 
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_tablica_a3626fbc8c7e54b24e7fba96b86a4173f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_tablica_a5feb149bbeae655c6d7bafada90f9615}{\index{\-Tablica@{\-Tablica}!operator==@{operator==}}
+\index{operator==@{operator==}!Tablica@{\-Tablica}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-Typ$>$ bool {\bf \-Tablica}$<$ \-Typ $>$\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Tablica}$<$ \-Typ $>$ \&}]{argument}
+\end{DoxyParamCaption}
+) const}}\label{class_tablica_a5feb149bbeae655c6d7bafada90f9615}
+\-Przeciazenie operatora porownania. 
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_tablica_a5feb149bbeae655c6d7bafada90f9615_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_tablica_a87f292495232b4f959291a3bc87bb829}{\index{\-Tablica@{\-Tablica}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Tablica@{\-Tablica}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-Typ$>$ \-Typ\& {\bf \-Tablica}$<$ \-Typ $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_tablica_a87f292495232b4f959291a3bc87bb829}
+\-Przeciazenie operatora indeksujacego \hypertarget{class_tablica_a5d41b52977f5bc0a3abf9e62cc209cc4}{\index{\-Tablica@{\-Tablica}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Tablica@{\-Tablica}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-Typ$>$ const \-Typ\& {\bf \-Tablica}$<$ \-Typ $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{const unsigned int}]{b}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_tablica_a5d41b52977f5bc0a3abf9e62cc209cc4}
+\hypertarget{class_tablica_acf3f8d852711619ed205e1569f40f789}{\index{\-Tablica@{\-Tablica}!rozmiar@{rozmiar}}
+\index{rozmiar@{rozmiar}!Tablica@{\-Tablica}}
+\subsubsection[{rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-Typ$>$ unsigned int {\bf \-Tablica}$<$ \-Typ $>$\-::{\bf rozmiar} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_tablica_acf3f8d852711619ed205e1569f40f789}
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_tablica_acf3f8d852711619ed205e1569f40f789_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_tablica_a335a030d40c416a7eaf1bf4d990cbf0b}{\index{\-Tablica@{\-Tablica}!zmele@{zmele}}
+\index{zmele@{zmele}!Tablica@{\-Tablica}}
+\subsubsection[{zmele}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ void {\bf \-Tablica}$<$ \-Typ $>$\-::{\bf zmele} (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_a335a030d40c416a7eaf1bf4d990cbf0b}
+
+
+\-Zamienia 2 elementy tablicy. 
+
+\hypertarget{class_tablica_aafcf1f86b79c0146fa313bae711cc97e}{\index{\-Tablica@{\-Tablica}!zmianarozmiaru@{zmianarozmiaru}}
+\index{zmianarozmiaru@{zmianarozmiaru}!Tablica@{\-Tablica}}
+\subsubsection[{zmianarozmiaru}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ void {\bf \-Tablica}$<$ \-Typ $>$\-::{\bf zmianarozmiaru} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{nowyrozmiar}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_aafcf1f86b79c0146fa313bae711cc97e}
+\hypertarget{class_tablica_a9a05fd018eb2142dd06760105efe96e8}{\index{\-Tablica@{\-Tablica}!zmienkolejnosc@{zmienkolejnosc}}
+\index{zmienkolejnosc@{zmienkolejnosc}!Tablica@{\-Tablica}}
+\subsubsection[{zmienkolejnosc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Typ $>$ void {\bf \-Tablica}$<$ \-Typ $>$\-::{\bf zmienkolejnosc} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_a9a05fd018eb2142dd06760105efe96e8}
+\-Odwraca tablice 
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_tablica_a1d87d674a1061ce4ca064d99f8714458}{\index{\-Tablica@{\-Tablica}!dltab@{dltab}}
+\index{dltab@{dltab}!Tablica@{\-Tablica}}
+\subsubsection[{dltab}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-Typ$>$ unsigned int {\bf \-Tablica}$<$ \-Typ $>$\-::{\bf dltab}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_tablica_a1d87d674a1061ce4ca064d99f8714458}
+\hypertarget{class_tablica_a8a186bd43f434e2c8b58377f6a54ab47}{\index{\-Tablica@{\-Tablica}!\-T@{\-T}}
+\index{\-T@{\-T}!Tablica@{\-Tablica}}
+\subsubsection[{\-T}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-Typ$>$ \-Typ$\ast$ {\bf \-Tablica}$<$ \-Typ $>$\-::{\bf \-T}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_tablica_a8a186bd43f434e2c8b58377f6a54ab47}
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z pliku\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tablica_8hpp}{tablica.\-hpp}\end{DoxyCompactItemize}

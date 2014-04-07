@@ -1,0 +1,208 @@
+\hypertarget{class_tablicaas}{\section{Dokumentacja szablonu klasy Tablicaas$<$ K, W $>$}
+\label{class_tablicaas}\index{Tablicaas$<$ K, W $>$@{Tablicaas$<$ K, W $>$}}
+}
+
+
+Modeluje pojęcie \hyperlink{class_tablicaas}{Tablicaas}. Klasa modeluje pojęcie Tablica asocjacyjna . Jej atrybutem są pola zawierające klucz i wartość.  
+
+
+
+
+{\ttfamily \#include $<$tablicaas.\-hh$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_tablicaas_ac97f4cb96d75a56448b9ed5a44b60826}{dodaj} (\hyperlink{classper}{per}$<$ K, W $>$ para)
+\begin{DoxyCompactList}\small\item\em Dodaje parę-\/wartość i klucz. Dodatkowo zmienna ilosc elementow zostaje zwiekszona. \end{DoxyCompactList}\item 
+void \hyperlink{class_tablicaas_aa961a5575d84d6f5762063f719879ae1}{usun} (K key)
+\begin{DoxyCompactList}\small\item\em Metoda która usuwa klucz. Dodatkowo zmienna ilosc elementow zostaje zmniejszona. \end{DoxyCompactList}\item 
+W \hyperlink{class_tablicaas_a329ae3086855ea056a5249430de4b5f3}{pobierz} (K key)
+\begin{DoxyCompactList}\small\item\em Pobiera klucz. /return Zwraca zmienna o nazwie wartosc. \end{DoxyCompactList}\item 
+bool \hyperlink{class_tablicaas_aff9f43c59bcb48c6f8fee095517960c9}{czypusta} ()
+\begin{DoxyCompactList}\small\item\em Sprawdza zawartość tablicy. \end{DoxyCompactList}\item 
+int \hyperlink{class_tablicaas_a2a6376d5554f6e028baf1c64f182fedc}{size} ()
+\begin{DoxyCompactList}\small\item\em Podaje rozmiar. \end{DoxyCompactList}\item 
+W \& \hyperlink{class_tablicaas_aacc5f2336e38656f946e46076794a071}{operator\mbox{[}$\,$\mbox{]}} (K key)
+\begin{DoxyCompactList}\small\item\em Przeciążenie operatora indeksującego. \end{DoxyCompactList}\item 
+int \hyperlink{class_tablicaas_a40a1e67d84970aaf04581fd6e0346220}{haszstring} (string key) const 
+\begin{DoxyCompactList}\small\item\em Funkcja haszująca dla obiektów typu string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classper}{per}$<$ K, W $>$ \hyperlink{class_tablicaas_a5f06a7cdb8f1b32a7791381c7c815d5e}{Tab} \mbox{[}\hyperlink{tablicaas_8hh_aa50aa866c5823769bb02e986d29a0589}{R\-O\-Z\-M\-I\-A\-R}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Wykorzystuje pola z klasy per. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Statyczne atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{class_tablicaas_a6710dabb371ab39cb600fa7fcf2e06ed}{zmienna} =0
+\begin{DoxyCompactList}\small\item\em Pomocnicza zmienna statyczna. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+\subsubsection*{template$<$typename K, typename W$>$class Tablicaas$<$ K, W $>$}
+
+
+
+Definicja w linii 28 pliku tablicaas.\-hh.
+
+
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{class_tablicaas_aff9f43c59bcb48c6f8fee095517960c9}{\index{Tablicaas@{Tablicaas}!czypusta@{czypusta}}
+\index{czypusta@{czypusta}!Tablicaas@{Tablicaas}}
+\subsubsection[{czypusta}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename W$>$ bool {\bf Tablicaas}$<$ K, W $>$\-::czypusta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablicaas_aff9f43c59bcb48c6f8fee095517960c9}
+\begin{DoxyReturn}{Zwraca}
+Metoda porownuje zmienna i zwraca true jeśli zmienna jest równa 0 i false w przeciwnym wypadku. 
+\end{DoxyReturn}
+
+
+Definicja w linii 55 pliku tablicaas.\-hh.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_tablicaas_aff9f43c59bcb48c6f8fee095517960c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_tablicaas_ac97f4cb96d75a56448b9ed5a44b60826}{\index{Tablicaas@{Tablicaas}!dodaj@{dodaj}}
+\index{dodaj@{dodaj}!Tablicaas@{Tablicaas}}
+\subsubsection[{dodaj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ void {\bf Tablicaas}$<$ K, W $>$\-::dodaj (
+\begin{DoxyParamCaption}
+\item[{{\bf per}$<$ K, W $>$}]{para}
+\end{DoxyParamCaption}
+)}}\label{class_tablicaas_ac97f4cb96d75a56448b9ed5a44b60826}
+
+
+Definicja w linii 85 pliku tablicaas.\-hh.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{class_tablicaas_ac97f4cb96d75a56448b9ed5a44b60826_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_tablicaas_a40a1e67d84970aaf04581fd6e0346220}{\index{Tablicaas@{Tablicaas}!haszstring@{haszstring}}
+\index{haszstring@{haszstring}!Tablicaas@{Tablicaas}}
+\subsubsection[{haszstring}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename W$>$ int {\bf Tablicaas}$<$ K, W $>$\-::haszstring (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablicaas_a40a1e67d84970aaf04581fd6e0346220}
+
+
+Definicja w linii 77 pliku tablicaas.\-hh.
+
+\hypertarget{class_tablicaas_aacc5f2336e38656f946e46076794a071}{\index{Tablicaas@{Tablicaas}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Tablicaas@{Tablicaas}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ W \& {\bf Tablicaas}$<$ K, W $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{K}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_tablicaas_aacc5f2336e38656f946e46076794a071}
+\begin{DoxyReturn}{Zwraca}
+Zwraca wartosc. 
+\end{DoxyReturn}
+
+
+Definicja w linii 105 pliku tablicaas.\-hh.
+
+\hypertarget{class_tablicaas_a329ae3086855ea056a5249430de4b5f3}{\index{Tablicaas@{Tablicaas}!pobierz@{pobierz}}
+\index{pobierz@{pobierz}!Tablicaas@{Tablicaas}}
+\subsubsection[{pobierz}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ W {\bf Tablicaas}$<$ K, W $>$\-::pobierz (
+\begin{DoxyParamCaption}
+\item[{K}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_tablicaas_a329ae3086855ea056a5249430de4b5f3}
+
+
+Definicja w linii 98 pliku tablicaas.\-hh.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{class_tablicaas_a329ae3086855ea056a5249430de4b5f3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_tablicaas_a2a6376d5554f6e028baf1c64f182fedc}{\index{Tablicaas@{Tablicaas}!size@{size}}
+\index{size@{size}!Tablicaas@{Tablicaas}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename W$>$ int {\bf Tablicaas}$<$ K, W $>$\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_tablicaas_a2a6376d5554f6e028baf1c64f182fedc}
+\begin{DoxyReturn}{Zwraca}
+Zwraca zmienna statyczna. 
+\end{DoxyReturn}
+
+
+Definicja w linii 62 pliku tablicaas.\-hh.
+
+\hypertarget{class_tablicaas_aa961a5575d84d6f5762063f719879ae1}{\index{Tablicaas@{Tablicaas}!usun@{usun}}
+\index{usun@{usun}!Tablicaas@{Tablicaas}}
+\subsubsection[{usun}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ void {\bf Tablicaas}$<$ K, W $>$\-::usun (
+\begin{DoxyParamCaption}
+\item[{K}]{key}
+\end{DoxyParamCaption}
+)}}\label{class_tablicaas_aa961a5575d84d6f5762063f719879ae1}
+
+
+Definicja w linii 91 pliku tablicaas.\-hh.
+
+
+
+Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_tablicaas_aa961a5575d84d6f5762063f719879ae1_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{class_tablicaas_a5f06a7cdb8f1b32a7791381c7c815d5e}{\index{Tablicaas@{Tablicaas}!Tab@{Tab}}
+\index{Tab@{Tab}!Tablicaas@{Tablicaas}}
+\subsubsection[{Tab}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename W$>$ {\bf per}$<$K,W$>$ {\bf Tablicaas}$<$ K, W $>$\-::Tab\mbox{[}{\bf R\-O\-Z\-M\-I\-A\-R}\mbox{]}}}\label{class_tablicaas_a5f06a7cdb8f1b32a7791381c7c815d5e}
+
+
+Definicja w linii 33 pliku tablicaas.\-hh.
+
+\hypertarget{class_tablicaas_a6710dabb371ab39cb600fa7fcf2e06ed}{\index{Tablicaas@{Tablicaas}!zmienna@{zmienna}}
+\index{zmienna@{zmienna}!Tablicaas@{Tablicaas}}
+\subsubsection[{zmienna}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K, typename W$>$ int {\bf Tablicaas}$<$ K, W $>$\-::zmienna =0\hspace{0.3cm}{\ttfamily [static]}}}\label{class_tablicaas_a6710dabb371ab39cb600fa7fcf2e06ed}
+
+
+Definicja w linii 68 pliku tablicaas.\-hh.
+
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{tablicaas_8hh}{tablicaas.\-hh}\item 
+\hyperlink{main_8cpp}{main.\-cpp}\end{DoxyCompactItemize}

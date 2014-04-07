@@ -1,0 +1,60 @@
+/*!
+\file tablica.h
+\brief Plik zawierający definicje klasy tablicy
+*/
+#ifndef TABLICA_H
+#define TABLICA_H
+
+/*!
+\brief Klasa reprezentująca tablicę
+*/
+template <typename Typ> 
+class tablica {
+  int wy;
+  Typ* T;
+public:
+/*!
+\brief Funkcja zwracająca wymiar tablicy
+*/
+  int wymiar() {return wy;};
+/*!
+\brief Domyślny konstruktor
+*/
+  tablica(int wymiar=0);
+/*!
+\brief Zamienia 2 elementy tablicy
+*/
+  void zam(int i, int j);
+/*!
+\brief Odwraca tablice
+*/
+  void odwroc();
+/*!
+\brief Dodaje element do tablicy
+*/
+  void dodaj(Typ e);
+/*! 
+\brief Dodaje tablice elementów
+*/
+
+  tablica<Typ> dodaj(tablica<Typ> A);
+/*!
+\brief Operator przypisania 
+*/
+  tablica<Typ> operator= (tablica<Typ> A);
+/*!
+\brief Operator porównania
+*/
+  bool operator== (tablica<Typ> A);
+/*!
+\brief Operator indeksowania
+*/
+  Typ & operator[](int ind) {return T[ind];}
+/*!
+\brief Operator indeksowania - zwraca wartości stałe
+*/
+  const Typ & operator[](int ind) const {return T[ind];}
+};
+
+
+#endif

@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>tablice: Plik źródłowy tablica.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">tablice
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">tablica.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tablica_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00005"></a>00005 <span class="preprocessor">#ifndef TABLICA_H</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span><span class="preprocessor">#define TABLICA_H</span>
+<a name="l00007"></a>00007 <span class="preprocessor"></span>
+<a name="l00011"></a><a class="code" href="classtab.html">00011</a> <span class="keyword">class </span><a class="code" href="classtab.html" title="Klasa reprezentująca tablicę">tab</a> {
+<a name="l00012"></a>00012   <span class="keywordtype">int</span> wym;
+<a name="l00013"></a>00013   <span class="keywordtype">int</span>* T;
+<a name="l00014"></a>00014 <span class="keyword">public</span>:
+<a name="l00018"></a><a class="code" href="classtab.html#ae9a39f118e9d520422a702f34a02a6d4">00018</a>   <span class="keywordtype">int</span> <a class="code" href="classtab.html#ae9a39f118e9d520422a702f34a02a6d4" title="Funkcja zwracająca wymiar tablicy.">wymiar</a>() {<span class="keywordflow">return</span> wym;};
+<a name="l00022"></a>00022   <a class="code" href="classtab.html#a62ce94ba44cb1cad08a795a6e694379f" title="Domyślny konstruktor.">tab</a>(<span class="keywordtype">int</span> <a class="code" href="classtab.html#ae9a39f118e9d520422a702f34a02a6d4" title="Funkcja zwracająca wymiar tablicy.">wymiar</a>=0);
+<a name="l00026"></a>00026   <span class="keywordtype">void</span> <a class="code" href="classtab.html#aa6b0961d15e5ad55f4dc84d5ca0f693b" title="Zamienia 2 elementy tablicy.">zamien</a>(<span class="keywordtype">int</span> i, <span class="keywordtype">int</span> j);
+<a name="l00030"></a>00030   <span class="keywordtype">void</span> <a class="code" href="classtab.html#ac618d6a3d5e17cd6afb0ba5c225f4416" title="Odwraca tablice.">odwroc</a>();
+<a name="l00034"></a>00034   <span class="keywordtype">void</span> <a class="code" href="classtab.html#ae6e506c6264acf4367f6927624e3fed0" title="Dodaje element do tablicy.">dodaj</a>(<span class="keywordtype">int</span> e);
+<a name="l00039"></a>00039   <a class="code" href="classtab.html" title="Klasa reprezentująca tablicę">tab</a> <a class="code" href="classtab.html#ae6e506c6264acf4367f6927624e3fed0" title="Dodaje element do tablicy.">dodaj</a>(<a class="code" href="classtab.html" title="Klasa reprezentująca tablicę">tab</a> B);
+<a name="l00043"></a>00043   <a class="code" href="classtab.html" title="Klasa reprezentująca tablicę">tab</a> <a class="code" href="classtab.html#a05351f5dbd8a13885d98b3165245e498" title="Operator przypisania.">operator= </a>(<a class="code" href="classtab.html" title="Klasa reprezentująca tablicę">tab</a> B);
+<a name="l00047"></a>00047   <span class="keywordtype">bool</span> <a class="code" href="classtab.html#a82eda0243a55cc93e412c46c1eef1b49" title="Operator porównania.">operator== </a>(<a class="code" href="classtab.html" title="Klasa reprezentująca tablicę">tab</a> B);
+<a name="l00051"></a><a class="code" href="classtab.html#a3c549759a4a4870aa49c798c05915e2b">00051</a>   <span class="keywordtype">int</span> &amp; <a class="code" href="classtab.html#a3c549759a4a4870aa49c798c05915e2b" title="Operator indeksowania.">operator[]</a>(<span class="keywordtype">int</span> ind) {<span class="keywordflow">return</span> T[ind];}
+<a name="l00055"></a><a class="code" href="classtab.html#aa0611573459a2dad5500d8315ef6fccc">00055</a>   <span class="keyword">const</span> <span class="keywordtype">int</span> &amp; <a class="code" href="classtab.html#aa0611573459a2dad5500d8315ef6fccc" title="Operator indeksowania - zwraca wartości stałe.">operator[]</a>(<span class="keywordtype">int</span> ind)<span class="keyword"> const </span>{<span class="keywordflow">return</span> T[ind];}
+<a name="l00056"></a>00056 };
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058 
+<a name="l00059"></a>00059 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano Fri Mar 7 2014 14:15:05 dla tablice programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

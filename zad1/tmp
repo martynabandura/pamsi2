@@ -1,0 +1,72 @@
+/*!
+\file tablica.cpp
+\brief Plik zawierający implementacje klasy tab
+*/
+#include "tablica.h"
+
+tablica::tablica(int w) {
+  wy=w;
+  T = new int [wy];
+}
+
+void tablica::zam(int i, int j) {
+  int tmp;
+  tmp = T[i];
+  T[i] = T[j];
+  T[j] = tmp;
+}
+
+void tablica::odwroc() {
+  for (int i=0;i<(wy/2);i++) {
+    zam(i,wy-i-1);
+  }
+}
+
+void tablica::dodaj(int e) {
+  wy++;
+  int* tmp;
+  tmp=T;
+  T = new int [wy];
+  for (int i=0;i<wy-1;i++) {
+    T[i]=tmp[i];
+  }
+  T[wy-1]=e;
+  delete [] tmp;
+}
+
+tablica tablica::dodaj(tablica A) {
+  int w;
+  w=wy+A.wymiar();
+  tablica Tablica(w);
+  for (int i=0;i<wy;i++) {
+    Tablica[i]=T[i];
+  }
+  for (int i=0;i<A.wy;i++) {
+    Tablica[wy+i]=A[i];
+  }
+  return Tablica;
+}
+
+tablica tablica::operator= (tablica A) {
+  wy=A.wymiar();
+  int* tmp;
+  tmp=T;
+  delete [] tmp;
+  T = new int [wy];
+  for (int i=0;i<wy;i++) {
+    T[i]=A[i];
+  }
+  return *this;  
+}
+
+bool tablica::operator== (tablica A) {
+  if (wy != A.wymiar()) {
+    return false;
+  }
+  for (int i=0;i<wy;i++) {
+    if (T[i] != A[i]) {
+      return false;
+    }
+  }
+  return true;
+}

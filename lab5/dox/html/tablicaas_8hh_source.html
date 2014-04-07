@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>Tablica asocjacyjna: Plik źródłowy tablicaas.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Tablica asocjacyjna
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Definicje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_4aa64b0872d36146e049722e293482e3.html">prj</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">tablicaas.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="tablicaas_8hh.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * tablicahasz.hh</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: 5 kwi 2014</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: karolina</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef TABLICAAS_HH_</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define TABLICAAS_HH_</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="tablicaas_8hh.html#aa50aa866c5823769bb02e986d29a0589">   10</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define ROZMIAR 100</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="per_8hh.html" title="Definicja szablonu klasy Per.">per.hh</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> W&gt;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="class_tablicaas.html">   28</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tablicaas.html" title="Modeluje pojęcie Tablicaas. Klasa modeluje pojęcie Tablica asocjacyjna . Jej atrybutem są pola zawier...">Tablicaas</a> {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_tablicaas.html#a5f06a7cdb8f1b32a7791381c7c815d5e">   33</a></span>&#160;    <a class="code" href="classper.html" title="Modeluje pojęcie per. Klasa modeluje pojęcie per(para) . Jej atrybutem są pola zawierające klucz i wa...">per&lt;K,W&gt;</a> <a class="code" href="class_tablicaas.html#a5f06a7cdb8f1b32a7791381c7c815d5e" title="Wykorzystuje pola z klasy per.">Tab</a>[<a class="code" href="tablicaas_8hh.html#aa50aa866c5823769bb02e986d29a0589">ROZMIAR</a>];</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;     <span class="keywordtype">void</span> <a class="code" href="class_tablicaas.html#ac97f4cb96d75a56448b9ed5a44b60826" title="Dodaje parę-wartość i klucz. Dodatkowo zmienna ilosc elementow zostaje zwiekszona.">dodaj</a>(<a class="code" href="classper.html" title="Modeluje pojęcie per. Klasa modeluje pojęcie per(para) . Jej atrybutem są pola zawierające klucz i wa...">per&lt;K,W&gt;</a> para);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_tablicaas.html#aa961a5575d84d6f5762063f719879ae1" title="Metoda która usuwa klucz. Dodatkowo zmienna ilosc elementow zostaje zmniejszona.">usun</a> ( K key);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;     W <a class="code" href="class_tablicaas.html#a329ae3086855ea056a5249430de4b5f3" title="Pobiera klucz. /return Zwraca zmienna o nazwie wartosc.">pobierz</a> (K key);</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="class_tablicaas.html#aff9f43c59bcb48c6f8fee095517960c9">   55</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_tablicaas.html#aff9f43c59bcb48c6f8fee095517960c9" title="Sprawdza zawartość tablicy.">czypusta</a>(){</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_tablicaas.html#a6710dabb371ab39cb600fa7fcf2e06ed" title="Pomocnicza zmienna statyczna.">zmienna</a>==0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="class_tablicaas.html#a2a6376d5554f6e028baf1c64f182fedc">   62</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tablicaas.html#a2a6376d5554f6e028baf1c64f182fedc" title="Podaje rozmiar.">size</a>(){</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_tablicaas.html#a6710dabb371ab39cb600fa7fcf2e06ed" title="Pomocnicza zmienna statyczna.">zmienna</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="class_tablicaas.html#a6710dabb371ab39cb600fa7fcf2e06ed">   68</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="class_tablicaas.html#a6710dabb371ab39cb600fa7fcf2e06ed" title="Pomocnicza zmienna statyczna.">zmienna</a>; <span class="comment">//ilosc elementow</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span>    W&amp; <a class="code" href="class_tablicaas.html#aacc5f2336e38656f946e46076794a071" title="Przeciążenie operatora indeksującego.">operator[]</a>(K key);</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="class_tablicaas.html#a40a1e67d84970aaf04581fd6e0346220">   77</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_tablicaas.html#a40a1e67d84970aaf04581fd6e0346220" title="Funkcja haszująca dla obiektów typu string.">haszstring</a>(<span class="keywordtype">string</span> key)<span class="keyword">const </span>{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> h=key[0];</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt; key.size();i++)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            h= (h&lt;&lt; 4)+key[i];</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> h % <a class="code" href="tablicaas_8hh.html#aa50aa866c5823769bb02e986d29a0589">ROZMIAR</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W&gt;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="class_tablicaas.html#ac97f4cb96d75a56448b9ed5a44b60826">   85</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablicaas.html#ac97f4cb96d75a56448b9ed5a44b60826" title="Dodaje parę-wartość i klucz. Dodatkowo zmienna ilosc elementow zostaje zwiekszona.">Tablicaas&lt;K,W&gt;::dodaj</a>(<a class="code" href="classper.html" title="Modeluje pojęcie per. Klasa modeluje pojęcie per(para) . Jej atrybutem są pola zawierające klucz i wa...">per&lt;K,W&gt;</a> para){</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">int</span> pozycja=haszstring(para.<a class="code" href="classper.html#a33ecddc68cd15fc35c4f7487b4f2705d" title="Inicjalizuje wartosc klucz.">key</a>);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    Tab[pozycja]=para;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    zmienna ++;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W&gt;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="class_tablicaas.html#aa961a5575d84d6f5762063f719879ae1">   91</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_tablicaas.html#aa961a5575d84d6f5762063f719879ae1" title="Metoda która usuwa klucz. Dodatkowo zmienna ilosc elementow zostaje zmniejszona.">Tablicaas&lt;K,W&gt;::usun</a>(K key){</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">int</span> pozycja=haszstring(key);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    Tab[pozycja].wartosc=NULL;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    zmienna --;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W&gt;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="code" href="class_tablicaas.html#a329ae3086855ea056a5249430de4b5f3">   98</a></span>&#160;W <a class="code" href="class_tablicaas.html#a329ae3086855ea056a5249430de4b5f3" title="Pobiera klucz. /return Zwraca zmienna o nazwie wartosc.">Tablicaas&lt;K,W&gt;::pobierz</a>(K key){</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> pozycja=haszstring(key);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> *Tab[pozycja].wartosc;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> W&gt;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="class_tablicaas.html#aacc5f2336e38656f946e46076794a071">  105</a></span>&#160;W&amp; <a class="code" href="class_tablicaas.html#aacc5f2336e38656f946e46076794a071" title="Przeciążenie operatora indeksującego.">Tablicaas&lt;K,W&gt;::operator[]</a>( K key){</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="keywordtype">int</span> hash = haszstring(key);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keywordflow">if</span> (Tab[hash].key == key)</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordflow">return</span> *Tab[hash].wartosc;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;Tab[hash].key = key;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;Tab[hash].wartosc = <span class="keyword">new</span> W;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;*Tab[hash].wartosc = 0;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="keywordflow">return</span> *Tab[hash].wartosc;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;}</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TABLICAAS_HH_ */</span><span class="preprocessor"></span></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano N, 6 kwi 2014 12:20:34 dla Tablica asocjacyjna programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

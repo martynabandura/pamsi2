@@ -1,0 +1,89 @@
+/*!
+\file program.cpp
+\brief Plik zawierający funkcje 
+*/
+#include <iostream>
+#include <ctime>
+#include <string>
+#include <fstream>
+#include <limits>
+
+#include "tablica.h"
+
+
+using namespace std;  
+
+/*!
+\brief Wczytuje tablice z pliku
+*/
+int wczytaj(tablica& Tablica, string NazwaPliku) {
+  int a;
+  ifstream StrmWe;
+  StrmWe.open(NazwaPliku.c_str());
+
+  if(!StrmWe.is_open()) {
+    cerr << " Nie otworzono pliku" << endl; 
+    return 1;
+  }
+  StrmWe>>a;
+while(!StrmWe.eof()) {
+  StrmWe>>a;
+
+  if (StrmWe.fail()) {
+      StrmWe.clear();
+      StrmWe.ignore(numeric_limits<int>::max( ),'\n');
+    } 
+    else { 
+      Tablica.dodaj( a );
+    }
+  }
+  StrmWe.close(); 
+}
+
+/*!
+\brief Mnoży tablice przez 2
+*/
+ void pomnoz(tablica& Tablica) {
+	for(int i = 0; i < Tablica.wymiar(); i++ ) 
+	Tablica[i]=Tablica[i]*2;  
+}
+
+
+/*!
+\brief Oblicza różnice pomiedzy dwoma pomiarami czasu
+*/
+timespec diff(timespec start, timespec end) {
+    timespec temp;
+    if((end.tv_nsec - start.tv_nsec) < 0) {
+        temp.tv_sec = end.tv_sec - start.tv_sec - 1;
+        temp.tv_nsec = 1000000000 + end.tv_nsec - start.tv_nsec;
+    } else {
+        temp.tv_sec = end.tv_sec - start.tv_sec;
+        temp.tv_nsec = end.tv_nsec - start.tv_nsec;    
+    }   
+    return temp;
+}
+
+/*!
+\brief Główna fukcja programu
+*/ 
+
+int main() {
+struct timespec time1, time2;
+tablica Tablica1, Tablica2;
+
+wczytaj(Tablica1, "dane.txt");
+wczytaj(Tablica2, "sprawdzenie.txt");
+
+clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &time1); // start
+
+pomnoz(Tablica1);
+
+clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &time2); // stop
+
+if (Tablica1==Tablica2) {
+cout << Tablica1.wymiar() << "\n1\n" << ((double)diff(time1, time2).tv_nsec)/1000000000 << "s" << endl;
+}
+else cout << "Tablice się nie zgadzają" << endl;  
+return 0;
+}

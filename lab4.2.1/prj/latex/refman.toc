@@ -1,0 +1,83 @@
+\contentsline {chapter}{\numberline {1}\discretionary {-}{}{}Dokumentacja zadania \discretionary {-}{}{}P\discretionary {-}{}{}A\discretionary {-}{}{}M\discretionary {-}{}{}S\discretionary {-}{}{}I \discretionary {-}{}{}L\discretionary {-}{}{}A\discretionary {-}{}{}B 4}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}\discretionary {-}{}{}Struktura katalog\IeC {\'o}w}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}\discretionary {-}{}{}Katalogi}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}\discretionary {-}{}{}Indeks klas}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}\discretionary {-}{}{}Lista klas}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}\discretionary {-}{}{}Indeks plik\IeC {\'o}w}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}\discretionary {-}{}{}Lista plik\IeC {\'o}w}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}\discretionary {-}{}{}Dokumentacja katalog\IeC {\'o}w}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}\discretionary {-}{}{}Dokumentacja katalogu inc/}{9}{section.5.1}
+\contentsline {section}{\numberline {5.2}\discretionary {-}{}{}Dokumentacja katalogu src/}{10}{section.5.2}
+\contentsline {chapter}{\numberline {6}\discretionary {-}{}{}Dokumentacja klas}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}\discretionary {-}{}{}Dokumentacja klasy \discretionary {-}{}{}Dzialania}{11}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}\discretionary {-}{}{}Opis szczeg\IeC {\'o}\IeC {\l }owy}{13}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}\discretionary {-}{}{}Dokumentacja funkcji sk\IeC {\l }adowych}{13}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}liczczas}{13}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}oblicz}{13}{subsubsection.6.1.2.2}
+\contentsline {subsubsection}{\numberline {6.1.2.3}porownaj}{13}{subsubsection.6.1.2.3}
+\contentsline {subsubsection}{\numberline {6.1.2.4}rozmiartab}{13}{subsubsection.6.1.2.4}
+\contentsline {subsubsection}{\numberline {6.1.2.5}wczytajplik}{13}{subsubsection.6.1.2.5}
+\contentsline {subsection}{\numberline {6.1.3}\discretionary {-}{}{}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{13}{subsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.3.1}tab1}{13}{subsubsection.6.1.3.1}
+\contentsline {subsubsection}{\numberline {6.1.3.2}tab2}{13}{subsubsection.6.1.3.2}
+\contentsline {section}{\numberline {6.2}\discretionary {-}{}{}Dokumentacja klasy \discretionary {-}{}{}Merge}{14}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}\discretionary {-}{}{}Dokumentacja funkcji sk\IeC {\l }adowych}{14}{subsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.1.1}merge}{14}{subsubsection.6.2.1.1}
+\contentsline {subsubsection}{\numberline {6.2.1.2}merge\discretionary {-}{}{}\_\discretionary {-}{}{}sort}{14}{subsubsection.6.2.1.2}
+\contentsline {subsubsection}{\numberline {6.2.1.3}sprawdz\discretionary {-}{}{}\_\discretionary {-}{}{}porzadek}{14}{subsubsection.6.2.1.3}
+\contentsline {subsubsection}{\numberline {6.2.1.4}wypelnij}{14}{subsubsection.6.2.1.4}
+\contentsline {subsubsection}{\numberline {6.2.1.5}wyswietl}{14}{subsubsection.6.2.1.5}
+\contentsline {subsubsection}{\numberline {6.2.1.6}wyswietl}{14}{subsubsection.6.2.1.6}
+\contentsline {section}{\numberline {6.3}\discretionary {-}{}{}Dokumentacja klasy \discretionary {-}{}{}Quick}{15}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}\discretionary {-}{}{}Dokumentacja funkcji sk\IeC {\l }adowych}{15}{subsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.1.1}quick\discretionary {-}{}{}\_\discretionary {-}{}{}sort}{15}{subsubsection.6.3.1.1}
+\contentsline {subsubsection}{\numberline {6.3.1.2}sprawdz\discretionary {-}{}{}\_\discretionary {-}{}{}porzadek}{16}{subsubsection.6.3.1.2}
+\contentsline {subsubsection}{\numberline {6.3.1.3}wypelnij}{16}{subsubsection.6.3.1.3}
+\contentsline {subsubsection}{\numberline {6.3.1.4}wypelnij\discretionary {-}{}{}\_\discretionary {-}{}{}odwrotnie}{16}{subsubsection.6.3.1.4}
+\contentsline {subsubsection}{\numberline {6.3.1.5}wyswietl}{16}{subsubsection.6.3.1.5}
+\contentsline {subsubsection}{\numberline {6.3.1.6}wyswietl}{16}{subsubsection.6.3.1.6}
+\contentsline {section}{\numberline {6.4}\discretionary {-}{}{}Dokumentacja szablonu klasy \discretionary {-}{}{}Tablica$<$ \discretionary {-}{}{}Typ $>$}{16}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}\discretionary {-}{}{}Opis szczeg\IeC {\'o}\IeC {\l }owy}{18}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}\discretionary {-}{}{}Dokumentacja konstruktora i destruktora}{18}{subsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.2.1}\discretionary {-}{}{}Tablica}{18}{subsubsection.6.4.2.1}
+\contentsline {subsubsection}{\numberline {6.4.2.2}$\sim $\discretionary {-}{}{}Tablica}{18}{subsubsection.6.4.2.2}
+\contentsline {subsection}{\numberline {6.4.3}\discretionary {-}{}{}Dokumentacja funkcji sk\IeC {\l }adowych}{18}{subsection.6.4.3}
+\contentsline {subsubsection}{\numberline {6.4.3.1}dodele}{18}{subsubsection.6.4.3.1}
+\contentsline {subsubsection}{\numberline {6.4.3.2}dodele}{18}{subsubsection.6.4.3.2}
+\contentsline {subsubsection}{\numberline {6.4.3.3}operator=}{19}{subsubsection.6.4.3.3}
+\contentsline {subsubsection}{\numberline {6.4.3.4}operator==}{19}{subsubsection.6.4.3.4}
+\contentsline {subsubsection}{\numberline {6.4.3.5}operator[]}{20}{subsubsection.6.4.3.5}
+\contentsline {subsubsection}{\numberline {6.4.3.6}operator[]}{20}{subsubsection.6.4.3.6}
+\contentsline {subsubsection}{\numberline {6.4.3.7}rozmiar}{20}{subsubsection.6.4.3.7}
+\contentsline {subsubsection}{\numberline {6.4.3.8}zmele}{20}{subsubsection.6.4.3.8}
+\contentsline {subsubsection}{\numberline {6.4.3.9}zmianarozmiaru}{20}{subsubsection.6.4.3.9}
+\contentsline {subsubsection}{\numberline {6.4.3.10}zmienkolejnosc}{20}{subsubsection.6.4.3.10}
+\contentsline {subsection}{\numberline {6.4.4}\discretionary {-}{}{}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{20}{subsection.6.4.4}
+\contentsline {subsubsection}{\numberline {6.4.4.1}dltab}{20}{subsubsection.6.4.4.1}
+\contentsline {subsubsection}{\numberline {6.4.4.2}\discretionary {-}{}{}T}{21}{subsubsection.6.4.4.2}
+\contentsline {chapter}{\numberline {7}\discretionary {-}{}{}Dokumentacja plik\IeC {\'o}w}{23}{chapter.7}
+\contentsline {section}{\numberline {7.1}\discretionary {-}{}{}Dokumentacja pliku dzialania.\discretionary {-}{}{}cpp}{23}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}\discretionary {-}{}{}Dokumentacja funkcji}{24}{subsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.1.1}foo}{24}{subsubsection.7.1.1.1}
+\contentsline {section}{\numberline {7.2}\discretionary {-}{}{}Dokumentacja pliku dzialania.\discretionary {-}{}{}hpp}{24}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}\discretionary {-}{}{}Dokumentacja funkcji}{25}{subsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.1.1}foo}{25}{subsubsection.7.2.1.1}
+\contentsline {section}{\numberline {7.3}\discretionary {-}{}{}Dokumentacja pliku glowny.\discretionary {-}{}{}cpp}{25}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}\discretionary {-}{}{}Dokumentacja definicji}{26}{subsection.7.3.1}
+\contentsline {subsubsection}{\numberline {7.3.1.1}\discretionary {-}{}{}R\discretionary {-}{}{}O\discretionary {-}{}{}Z\discretionary {-}{}{}M\discretionary {-}{}{}I\discretionary {-}{}{}A\discretionary {-}{}{}R}{26}{subsubsection.7.3.1.1}
+\contentsline {subsection}{\numberline {7.3.2}\discretionary {-}{}{}Dokumentacja funkcji}{26}{subsection.7.3.2}
+\contentsline {subsubsection}{\numberline {7.3.2.1}main}{26}{subsubsection.7.3.2.1}
+\contentsline {section}{\numberline {7.4}\discretionary {-}{}{}Dokumentacja pliku merge.\discretionary {-}{}{}cpp}{27}{section.7.4}
+\contentsline {section}{\numberline {7.5}\discretionary {-}{}{}Dokumentacja pliku merge.\discretionary {-}{}{}hpp}{28}{section.7.5}
+\contentsline {section}{\numberline {7.6}\discretionary {-}{}{}Dokumentacja pliku quick.\discretionary {-}{}{}cpp}{28}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}\discretionary {-}{}{}Dokumentacja funkcji}{29}{subsection.7.6.1}
+\contentsline {subsubsection}{\numberline {7.6.1.1}usun\discretionary {-}{}{}\_\discretionary {-}{}{}tablica}{29}{subsubsection.7.6.1.1}
+\contentsline {section}{\numberline {7.7}\discretionary {-}{}{}Dokumentacja pliku quick.\discretionary {-}{}{}hpp}{29}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}\discretionary {-}{}{}Dokumentacja funkcji}{29}{subsection.7.7.1}
+\contentsline {subsubsection}{\numberline {7.7.1.1}usun\discretionary {-}{}{}\_\discretionary {-}{}{}tablica}{30}{subsubsection.7.7.1.1}
+\contentsline {section}{\numberline {7.8}\discretionary {-}{}{}Dokumentacja pliku tablica.\discretionary {-}{}{}cpp}{30}{section.7.8}
+\contentsline {subsection}{\numberline {7.8.1}\discretionary {-}{}{}Dokumentacja funkcji}{30}{subsection.7.8.1}
+\contentsline {subsubsection}{\numberline {7.8.1.1}foo22}{31}{subsubsection.7.8.1.1}
+\contentsline {section}{\numberline {7.9}\discretionary {-}{}{}Dokumentacja pliku tablica.\discretionary {-}{}{}hpp}{31}{section.7.9}
+\contentsline {subsection}{\numberline {7.9.1}\discretionary {-}{}{}Dokumentacja funkcji}{32}{subsection.7.9.1}
+\contentsline {subsubsection}{\numberline {7.9.1.1}foo22}{32}{subsubsection.7.9.1.1}

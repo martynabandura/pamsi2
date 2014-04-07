@@ -1,0 +1,94 @@
+\documentclass[a4paper]{book}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage[T1]{fontenc}
+
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=8,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large \-Lab4 }\\
+\vspace*{1cm}
+{\large \-Wygenerowano przez Doxygen 1.7.6.1}\\
+\vspace*{0.5cm}
+{\small Sun Mar 30 2014 22:58:16}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+\chapter{\-Dokumentacja zadania \-P\-A\-M\-S\-I \-L\-A\-B 4}
+\label{index}\hypertarget{index}{}\input{index}
+\chapter{\-Struktura katalogów}
+\input{dirs}
+\chapter{\-Indeks klas}
+\input{annotated}
+\chapter{\-Indeks plików}
+\input{files}
+\chapter{\-Dokumentacja katalogów}
+\input{dir_c07a9c7beb5be1f9263fa9a4a27d497a}
+\input{dir_40848eaed652bede2b8acd305f90d5c5}
+\chapter{\-Dokumentacja klas}
+\input{class_dzialania}
+\input{class_merge}
+\input{class_quick}
+\input{class_tablica}
+\chapter{\-Dokumentacja plików}
+\input{dzialania_8cpp}
+\input{dzialania_8hpp}
+\input{glowny_8cpp}
+\input{merge_8cpp}
+\input{merge_8hpp}
+\input{quick_8cpp}
+\input{quick_8hpp}
+\input{tablica_8cpp}
+\input{tablica_8hpp}
+\printindex
+\end{document}

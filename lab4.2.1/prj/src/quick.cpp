@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+
+
+void usun_tablica(int **tab) {
+	int l_wierszy = 100;
+	for (int x = 0; x < l_wierszy; x++)
+		delete [] tab[x];
+
+	delete [] tab;
+	tab = NULL;
+}

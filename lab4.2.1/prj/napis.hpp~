@@ -1,0 +1,7 @@
+
+#ifndef _NAPIS_HPP
+#define _NAPIS_HPP
+
+class Napis;
+
+#endif
