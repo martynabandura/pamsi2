@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Lab6: Plik źródłowy Wezel.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Lab6
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('_wezel_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Wezel.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_wezel_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#pragma once</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#include&quot;<a class="code" href="_para_8h.html" title="Definicja szablonu klasy Para Plik zawiera definicje szablonu klasy Para.">Para.h</a>&quot;</span>
+<a name="l00013"></a>00013 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W &gt;
+<a name="l00014"></a><a class="code" href="class_wezel.html">00014</a> <span class="keyword">class </span><a class="code" href="class_wezel.html" title="Modeluje pojecie wezla. Jego atrybutem jest klasa Para.">Wezel</a>{
+<a name="l00015"></a>00015 <span class="keyword">public</span>:
+<a name="l00019"></a><a class="code" href="class_wezel.html#a4ce56c464874565cc027ce9660cf8e25">00019</a>         <a class="code" href="class_para.html" title="Modeluje pojecie pary. Jej atrybutem sa pola zawierajace klucz i wartosci.">Para&lt;K,W&gt;</a> *<a class="code" href="class_wezel.html#a4ce56c464874565cc027ce9660cf8e25" title="Definicja zmiennej para.">para</a>;
+<a name="l00023"></a><a class="code" href="class_wezel.html#ae58a8e38a89e571a26afa5e2ca93a1f5">00023</a>         <a class="code" href="class_wezel.html" title="Modeluje pojecie wezla. Jego atrybutem jest klasa Para.">Wezel</a> *<a class="code" href="class_wezel.html#ae58a8e38a89e571a26afa5e2ca93a1f5" title="Definicja zmiennej lewy.">lewy</a>;
+<a name="l00027"></a><a class="code" href="class_wezel.html#a5b54943e3c95535fbf59be020808e359">00027</a>         <a class="code" href="class_wezel.html" title="Modeluje pojecie wezla. Jego atrybutem jest klasa Para.">Wezel</a> *<a class="code" href="class_wezel.html#a5b54943e3c95535fbf59be020808e359" title="Definicja zmiennej prawy.">prawy</a>;
+<a name="l00032"></a>00032         <a class="code" href="class_wezel.html#a0cd481c65e68ade2fd5a1f142c6995a5">Wezel</a>(<a class="code" href="class_para.html" title="Modeluje pojecie pary. Jej atrybutem sa pola zawierajace klucz i wartosci.">Para&lt;K,W&gt;</a> <a class="code" href="class_wezel.html#a4ce56c464874565cc027ce9660cf8e25" title="Definicja zmiennej para.">para</a>);
+<a name="l00033"></a><a class="code" href="class_wezel.html#a0cd481c65e68ade2fd5a1f142c6995a5">00033</a>         <a class="code" href="class_wezel.html#a0cd481c65e68ade2fd5a1f142c6995a5">Wezel</a>(){this-&gt;<a class="code" href="class_wezel.html#a4ce56c464874565cc027ce9660cf8e25" title="Definicja zmiennej para.">para</a> = <span class="keyword">new</span> <a class="code" href="class_para.html" title="Modeluje pojecie pary. Jej atrybutem sa pola zawierajace klucz i wartosci.">Para&lt;K,W&gt;</a>;}
+<a name="l00038"></a>00038         <a class="code" href="class_wezel.html#a55c98fea43ceb7c06e2317754df6626a" title="Destruktor klasy Wezel. Czysci pamiec po obiekcie.">~Wezel</a>();
+<a name="l00043"></a>00043         <a class="code" href="class_wezel.html#a0cd481c65e68ade2fd5a1f142c6995a5">Wezel</a>(<span class="keyword">const</span> <a class="code" href="class_wezel.html" title="Modeluje pojecie wezla. Jego atrybutem jest klasa Para.">Wezel</a>&amp; wezel);
+<a name="l00044"></a>00044 
+<a name="l00049"></a>00049         <span class="keywordtype">void</span> <a class="code" href="class_wezel.html#acfc2260875484193f734f2eeed617062" title="Funkcja osieroc. Ustawia wskazniki na dzieci na NULL.">osieroc</a>();
+<a name="l00050"></a>00050 };
+<a name="l00051"></a>00051 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W &gt;
+<a name="l00052"></a><a class="code" href="class_wezel.html#a53d3ba4254af71bdf944878ce0f69552">00052</a> <a class="code" href="class_wezel.html#a0cd481c65e68ade2fd5a1f142c6995a5">Wezel&lt;K,W&gt;::Wezel</a>(<a class="code" href="class_para.html" title="Modeluje pojecie pary. Jej atrybutem sa pola zawierajace klucz i wartosci.">Para&lt;K,W&gt;</a> para){
+<a name="l00053"></a>00053         this-&gt;para = <span class="keyword">new</span> <a class="code" href="class_para.html" title="Modeluje pojecie pary. Jej atrybutem sa pola zawierajace klucz i wartosci.">Para&lt;K,W&gt;</a>(para);
+<a name="l00054"></a>00054         lewy = NULL;
+<a name="l00055"></a>00055         prawy = NULL;
+<a name="l00056"></a>00056 }
+<a name="l00057"></a>00057 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W &gt;
+<a name="l00058"></a><a class="code" href="class_wezel.html#a55c98fea43ceb7c06e2317754df6626a">00058</a> <a class="code" href="class_wezel.html#a55c98fea43ceb7c06e2317754df6626a" title="Destruktor klasy Wezel. Czysci pamiec po obiekcie.">Wezel&lt;K,W&gt;::~Wezel</a>(){
+<a name="l00059"></a>00059         <span class="keywordflow">if</span>(para!=NULL)
+<a name="l00060"></a>00060                 <span class="keyword">delete</span> para;
+<a name="l00061"></a>00061         <span class="keywordflow">if</span>(lewy!=NULL)
+<a name="l00062"></a>00062                 <span class="keyword">delete</span> lewy;
+<a name="l00063"></a>00063         <span class="keywordflow">if</span>(prawy!=NULL)
+<a name="l00064"></a>00064                 <span class="keyword">delete</span> prawy;
+<a name="l00065"></a>00065 }
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W &gt;
+<a name="l00068"></a><a class="code" href="class_wezel.html#a32218370d2423ff2e42f65926c74c767">00068</a> <a class="code" href="class_wezel.html#a0cd481c65e68ade2fd5a1f142c6995a5">Wezel&lt;K,W&gt;::Wezel</a>(<span class="keyword">const</span> <a class="code" href="class_wezel.html" title="Modeluje pojecie wezla. Jego atrybutem jest klasa Para.">Wezel&lt;K,W&gt;</a>&amp; wezel){
+<a name="l00069"></a>00069         this-&gt;para = <span class="keyword">new</span> <a class="code" href="class_para.html" title="Modeluje pojecie pary. Jej atrybutem sa pola zawierajace klucz i wartosci.">Para&lt;K,W&gt;</a>(*(wezel.<a class="code" href="class_wezel.html#a4ce56c464874565cc027ce9660cf8e25" title="Definicja zmiennej para.">para</a>));
+<a name="l00070"></a>00070         this-&gt;lewy = wezel.<a class="code" href="class_wezel.html#ae58a8e38a89e571a26afa5e2ca93a1f5" title="Definicja zmiennej lewy.">lewy</a>;
+<a name="l00071"></a>00071         this-&gt;prawy = wezel.<a class="code" href="class_wezel.html#a5b54943e3c95535fbf59be020808e359" title="Definicja zmiennej prawy.">prawy</a>;
+<a name="l00072"></a>00072 }
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W &gt;
+<a name="l00075"></a><a class="code" href="class_wezel.html#acfc2260875484193f734f2eeed617062">00075</a> <span class="keywordtype">void</span> <a class="code" href="class_wezel.html#acfc2260875484193f734f2eeed617062" title="Funkcja osieroc. Ustawia wskazniki na dzieci na NULL.">Wezel&lt;K,W&gt;::osieroc</a>(){
+<a name="l00076"></a>00076         lewy = NULL;
+<a name="l00077"></a>00077         prawy = NULL;
+<a name="l00078"></a>00078 }
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="_wezel_8h.html">Wezel.h</a>      </li>
+
+    <li class="footer">Wygenerowano Tue Apr 22 2014 16:34:33 dla Lab6 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+\hypertarget{class_drzewo}{\section{\-Dokumentacja szablonu klasy \-Drzewo$<$ \-K, \-W $>$}
+\label{class_drzewo}\index{\-Drzewo$<$ K, W $>$@{\-Drzewo$<$ K, W $>$}}
+}
+
+
+{\ttfamily \#include $<$\-Drzewo.\-h$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_drzewo_a123b6a71eed621cac3eaf0be8832472f}{\-Drzewo} ()
+\item 
+\hyperlink{class_drzewo_af342485cb51b160c303a57fada508642}{$\sim$\-Drzewo} ()
+\item 
+\hyperlink{class_drzewo_a69255eed324949a2e0dbcda0ea5bd011}{\-Drzewo} (const \hyperlink{class_drzewo}{\-Drzewo} \&drzewo)
+\item 
+void \hyperlink{class_drzewo_a81d5e253a86cc6e42ab011d3e2157d1a}{dodaj} (\-K klucz, \-W wartosc)
+\item 
+\-W \hyperlink{class_drzewo_add8d5fe17b7552b3d494fa5b9c49ce6b}{pobierz\-Wartosc} (\-K klucz)
+\item 
+void \hyperlink{class_drzewo_a7ff767a6ea6bc9c418d1fb24ed0d6276}{usun} (\-K klucz)
+\item 
+\hyperlink{class_wezel}{\-Wezel}$<$ \-K, \-W $>$ $\ast$\& \hyperlink{class_drzewo_a5e331e1a37bf317c2742b94a34e93b2e}{nastepnik} (\hyperlink{class_wezel}{\-Wezel}$<$ \-K, \-W $>$ $\ast$\&wezel, \hyperlink{class_wezel}{\-Wezel}$<$ \-K, \-W $>$ $\ast$\&us)
+\end{DoxyCompactItemize}
+\subsection*{\-Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_drzewo_af32cbb347cb334efa59ca8bf83f0c343}{dodaj} (\-K klucz, \-W wartosc, \hyperlink{class_wezel}{\-Wezel}$<$ \-K, \-W $>$ $\ast$\&wsk)
+\item 
+\hyperlink{class_wezel}{\-Wezel}$<$ \-K, \-W $>$ $\ast$\& \hyperlink{class_drzewo_a0353214a4242185bd700f361246ad928}{usun} (\-K klucz, \hyperlink{class_wezel}{\-Wezel}$<$ \-K, \-W $>$ $\ast$\&wezel)
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wezel}{\-Wezel}$<$ \-K, \-W $>$ $\ast$ \hyperlink{class_drzewo_a98a51a2f29c2084a3a3c393b62148511}{korzen}
+\item 
+int \hyperlink{class_drzewo_aced92fc2774839454279308ef420d6d4}{liczba\-Elementow}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\subsubsection*{template$<$typename \-K, typename \-W$>$class Drzewo$<$ K, W $>$}
+
+\-Modeluje pojecie drzewa binarnego. \-Jego atrybutem jest klasa \hyperlink{class_wezel}{\-Wezel}. 
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_drzewo_a123b6a71eed621cac3eaf0be8832472f}{\index{\-Drzewo@{\-Drzewo}!\-Drzewo@{\-Drzewo}}
+\index{\-Drzewo@{\-Drzewo}!Drzewo@{\-Drzewo}}
+\subsubsection[{\-Drzewo}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ {\bf \-Drzewo}$<$ \-K, \-W $>$\-::{\bf \-Drzewo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_a123b6a71eed621cac3eaf0be8832472f}
+
+
+\-Konstruktor klasy \hyperlink{class_drzewo}{\-Drzewo}. \-Bezargumentowy. 
+
+\hypertarget{class_drzewo_af342485cb51b160c303a57fada508642}{\index{\-Drzewo@{\-Drzewo}!$\sim$\-Drzewo@{$\sim$\-Drzewo}}
+\index{$\sim$\-Drzewo@{$\sim$\-Drzewo}!Drzewo@{\-Drzewo}}
+\subsubsection[{$\sim$\-Drzewo}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ {\bf \-Drzewo}$<$ \-K, \-W $>$\-::$\sim${\bf \-Drzewo} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_af342485cb51b160c303a57fada508642}
+
+
+\-Destruktor klasy \hyperlink{class_drzewo}{\-Drzewo}. \-Czysci pamiec po obiekcie. 
+
+\hypertarget{class_drzewo_a69255eed324949a2e0dbcda0ea5bd011}{\index{\-Drzewo@{\-Drzewo}!\-Drzewo@{\-Drzewo}}
+\index{\-Drzewo@{\-Drzewo}!Drzewo@{\-Drzewo}}
+\subsubsection[{\-Drzewo}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ {\bf \-Drzewo}$<$ \-K, \-W $>$\-::{\bf \-Drzewo} (
+\begin{DoxyParamCaption}
+\item[{const {\bf \-Drzewo}$<$ \-K, \-W $>$ \&}]{drzewo}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_a69255eed324949a2e0dbcda0ea5bd011}
+
+
+\-Konstruktor kopiujacy klasy \hyperlink{class_drzewo}{\-Drzewo}. \-Kopiuje obiekt. 
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_drzewo_af32cbb347cb334efa59ca8bf83f0c343}{\index{\-Drzewo@{\-Drzewo}!dodaj@{dodaj}}
+\index{dodaj@{dodaj}!Drzewo@{\-Drzewo}}
+\subsubsection[{dodaj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ void {\bf \-Drzewo}$<$ \-K, \-W $>$\-::{\bf dodaj} (
+\begin{DoxyParamCaption}
+\item[{\-K}]{klucz, }
+\item[{\-W}]{wartosc, }
+\item[{{\bf \-Wezel}$<$ \-K, \-W $>$ $\ast$\&}]{wsk}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_drzewo_af32cbb347cb334efa59ca8bf83f0c343}
+
+
+\-Funkcja dodaj. \-Dodaje wezel do drzewa. 
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{class_drzewo_af32cbb347cb334efa59ca8bf83f0c343_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_drzewo_a81d5e253a86cc6e42ab011d3e2157d1a}{\index{\-Drzewo@{\-Drzewo}!dodaj@{dodaj}}
+\index{dodaj@{dodaj}!Drzewo@{\-Drzewo}}
+\subsubsection[{dodaj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ void {\bf \-Drzewo}$<$ \-K, \-W $>$\-::{\bf dodaj} (
+\begin{DoxyParamCaption}
+\item[{\-K}]{klucz, }
+\item[{\-W}]{wartosc}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_a81d5e253a86cc6e42ab011d3e2157d1a}
+
+
+\-Funkcja dodaj. \-Dodaje wezel do drzewa. 
+
+\hypertarget{class_drzewo_a5e331e1a37bf317c2742b94a34e93b2e}{\index{\-Drzewo@{\-Drzewo}!nastepnik@{nastepnik}}
+\index{nastepnik@{nastepnik}!Drzewo@{\-Drzewo}}
+\subsubsection[{nastepnik}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ {\bf \-Wezel}$<$ \-K, \-W $>$ $\ast$\& {\bf \-Drzewo}$<$ \-K, \-W $>$\-::{\bf nastepnik} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Wezel}$<$ \-K, \-W $>$ $\ast$\&}]{wezel, }
+\item[{{\bf \-Wezel}$<$ \-K, \-W $>$ $\ast$\&}]{us}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_a5e331e1a37bf317c2742b94a34e93b2e}
+
+
+\-Funkcja nastepnik. \-Wyszukuje i wstawia w odpowiednie miejsce nastepnika. 
+
+\hypertarget{class_drzewo_add8d5fe17b7552b3d494fa5b9c49ce6b}{\index{\-Drzewo@{\-Drzewo}!pobierz\-Wartosc@{pobierz\-Wartosc}}
+\index{pobierz\-Wartosc@{pobierz\-Wartosc}!Drzewo@{\-Drzewo}}
+\subsubsection[{pobierz\-Wartosc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ \-W {\bf \-Drzewo}$<$ \-K, \-W $>$\-::{\bf pobierz\-Wartosc} (
+\begin{DoxyParamCaption}
+\item[{\-K}]{klucz}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_add8d5fe17b7552b3d494fa5b9c49ce6b}
+
+
+\-Funkcja pobierz\-Wartosc. \-Zwraca wartosc przypisana do klucza. 
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{class_drzewo_add8d5fe17b7552b3d494fa5b9c49ce6b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_drzewo_a0353214a4242185bd700f361246ad928}{\index{\-Drzewo@{\-Drzewo}!usun@{usun}}
+\index{usun@{usun}!Drzewo@{\-Drzewo}}
+\subsubsection[{usun}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ {\bf \-Wezel}$<$ \-K, \-W $>$ $\ast$\& {\bf \-Drzewo}$<$ \-K, \-W $>$\-::{\bf usun} (
+\begin{DoxyParamCaption}
+\item[{\-K}]{klucz, }
+\item[{{\bf \-Wezel}$<$ \-K, \-W $>$ $\ast$\&}]{wezel}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_drzewo_a0353214a4242185bd700f361246ad928}
+
+
+\-Funkcja usun. \-Usuwa wezel z drzewa. 
+
+
+
+\-Oto graf wywoływań tej funkcji\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_drzewo_a0353214a4242185bd700f361246ad928_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_drzewo_a7ff767a6ea6bc9c418d1fb24ed0d6276}{\index{\-Drzewo@{\-Drzewo}!usun@{usun}}
+\index{usun@{usun}!Drzewo@{\-Drzewo}}
+\subsubsection[{usun}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ void {\bf \-Drzewo}$<$ \-K, \-W $>$\-::{\bf usun} (
+\begin{DoxyParamCaption}
+\item[{\-K}]{klucz}
+\end{DoxyParamCaption}
+)}}\label{class_drzewo_a7ff767a6ea6bc9c418d1fb24ed0d6276}
+
+
+\-Funkcja usun. \-Usuwa wezel z drzewa. 
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_drzewo_a98a51a2f29c2084a3a3c393b62148511}{\index{\-Drzewo@{\-Drzewo}!korzen@{korzen}}
+\index{korzen@{korzen}!Drzewo@{\-Drzewo}}
+\subsubsection[{korzen}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-K, typename \-W$>$ {\bf \-Wezel}$<$\-K,\-W$>$$\ast$ {\bf \-Drzewo}$<$ \-K, \-W $>$\-::{\bf korzen}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_drzewo_a98a51a2f29c2084a3a3c393b62148511}
+
+
+\-Poczatkowy element drzewa -\/ korzen. 
+
+\hypertarget{class_drzewo_aced92fc2774839454279308ef420d6d4}{\index{\-Drzewo@{\-Drzewo}!liczba\-Elementow@{liczba\-Elementow}}
+\index{liczba\-Elementow@{liczba\-Elementow}!Drzewo@{\-Drzewo}}
+\subsubsection[{liczba\-Elementow}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-K, typename \-W$>$ int {\bf \-Drzewo}$<$ \-K, \-W $>$\-::{\bf liczba\-Elementow}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_drzewo_aced92fc2774839454279308ef420d6d4}
+
+
+\-Obecna liczba elementow w tablicy. 
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z pliku\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_drzewo_8h}{\-Drzewo.\-h}\end{DoxyCompactItemize}

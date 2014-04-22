@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Lab6: Plik źródłowy Tablica.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Lab6
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Szukaj" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('_tablica_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">Tablica.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_tablica_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#pragma once</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="_para_8h.html" title="Definicja szablonu klasy Para Plik zawiera definicje szablonu klasy Para.">Para.h</a>&quot;</span>
+<a name="l00003"></a>00003 <span class="preprocessor">#include &lt;string.h&gt;</span>
+<a name="l00017"></a>00017 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> W&gt;
+<a name="l00018"></a><a class="code" href="class_tablica.html">00018</a> <span class="keyword">class </span><a class="code" href="class_tablica.html" title="Modeluje pojecie tablicy z haszowaniem. Klasa modeluje pojecie tablicy z haszowaniem. Jej atrybutami sa pola: klucz i wartosc.">Tablica</a> {
+<a name="l00019"></a>00019 <span class="keyword">private</span>:
+<a name="l00023"></a><a class="code" href="class_tablica.html#a0d6b03ac0a2b996d4096038ef9315e9a">00023</a>         <a class="code" href="class_para.html" title="Modeluje pojecie pary. Jej atrybutem sa pola zawierajace klucz i wartosci.">Para&lt;K,W&gt;</a> **<a class="code" href="class_tablica.html#a0d6b03ac0a2b996d4096038ef9315e9a" title="Tablica par.">tablica</a>;
+<a name="l00027"></a><a class="code" href="class_tablica.html#a603b571fcc0d29b757bfd5fe27d0fadc">00027</a>         <span class="keywordtype">int</span> <a class="code" href="class_tablica.html#a603b571fcc0d29b757bfd5fe27d0fadc" title="Obecna liczba elementow w tablicy.">liczbaElementow</a>;
+<a name="l00031"></a><a class="code" href="class_tablica.html#a40b3c86ceb2ec860b9d19ce0e866b406">00031</a>         <span class="keywordtype">int</span> <a class="code" href="class_tablica.html#a40b3c86ceb2ec860b9d19ce0e866b406" title="Maksymalna liczba elementow w tablicy.">rozmiar</a>;
+<a name="l00035"></a>00035     <span class="keywordtype">int</span> <a class="code" href="class_tablica.html#a8fd66d75553eb44aa043f917fd9317dc" title="Funkcja haszujaca dla obiektow typu string.">haszstring</a>(K key);
+<a name="l00036"></a>00036 <span class="keyword">public</span>:
+<a name="l00041"></a>00041         <a class="code" href="class_tablica.html#ae1408ffc077347605b61ea0899ddebed" title="Konstruktor klasy Tablica. Jego argumentem jest maksymalny rozmiar tablicy.">Tablica</a>(<span class="keywordtype">int</span> <a class="code" href="class_tablica.html#a40b3c86ceb2ec860b9d19ce0e866b406" title="Maksymalna liczba elementow w tablicy.">rozmiar</a>);
+<a name="l00046"></a>00046         <a class="code" href="class_tablica.html#aabb6e01e32fd2d32ddcfba2c10b9ec5e" title="Destruktor klasy Tablica. Czysci pamiec.">~Tablica</a>();
+<a name="l00051"></a>00051          <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aebb17d3366e37c8b4852df08eae2a1de" title="Funkcja dodaj. Dodaje krotke do tablicy.">dodaj</a>(<a class="code" href="class_para.html" title="Modeluje pojecie pary. Jej atrybutem sa pola zawierajace klucz i wartosci.">Para&lt;K,W&gt;</a> &amp;para);
+<a name="l00056"></a>00056         <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a061a219dd25c6696940f40226d99a99d" title="Funkcja usun. Usuwa krotke o podanym kluczu.">usun</a> ( K klucz);
+<a name="l00061"></a>00061         W <a class="code" href="class_tablica.html#a6de46e3062f16d78c4cb2cf18c9b0de1" title="Funkcja pobierzWartosc.">pobierzWartosc</a>(K klucz);
+<a name="l00067"></a><a class="code" href="class_tablica.html#a19d8da0353d73517375cf6b2984f9d5c">00067</a>         <span class="keywordtype">bool</span> <a class="code" href="class_tablica.html#a19d8da0353d73517375cf6b2984f9d5c" title="Sprawdza zapelnienie tablicy.">czypusta</a>(){
+<a name="l00068"></a>00068                 <span class="keywordflow">return</span> <a class="code" href="class_tablica.html#a603b571fcc0d29b757bfd5fe27d0fadc" title="Obecna liczba elementow w tablicy.">liczbaElementow</a>==0;
+<a name="l00069"></a>00069         }
+<a name="l00074"></a><a class="code" href="class_tablica.html#aabc40f316cf398a07e3035b1c4adc256">00074</a>         <span class="keywordtype">int</span> <a class="code" href="class_tablica.html#aabc40f316cf398a07e3035b1c4adc256" title="Podaje liczbe elementow w tablicy.">size</a>(){
+<a name="l00075"></a>00075                 <span class="keywordflow">return</span> <a class="code" href="class_tablica.html#a603b571fcc0d29b757bfd5fe27d0fadc" title="Obecna liczba elementow w tablicy.">liczbaElementow</a>;
+<a name="l00076"></a>00076         }
+<a name="l00077"></a>00077  
+<a name="l00082"></a>00082         W&amp; <a class="code" href="class_tablica.html#a7f5a2d2ebe594ec98dd38dfbbb83497d" title="Przeciazenie operatora indeksujacego.">operator[]</a>(K klucz);
+<a name="l00083"></a>00083 };
+<a name="l00084"></a>00084 
+<a name="l00085"></a>00085 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W&gt;
+<a name="l00086"></a><a class="code" href="class_tablica.html#a8fd66d75553eb44aa043f917fd9317dc">00086</a> <span class="keywordtype">int</span> <a class="code" href="class_tablica.html#a8fd66d75553eb44aa043f917fd9317dc" title="Funkcja haszujaca dla obiektow typu string.">Tablica&lt;K,W&gt;::haszstring</a>(K key){
+<a name="l00087"></a>00087         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> h=key[0];
+<a name="l00088"></a>00088         <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i=0; i&lt; key.size();i++)
+<a name="l00089"></a>00089                 h= (h&lt;&lt; 4)+key[i];
+<a name="l00090"></a>00090         <span class="keywordflow">return</span> h % rozmiar;
+<a name="l00091"></a>00091 }
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W&gt;
+<a name="l00095"></a><a class="code" href="class_tablica.html#ae1408ffc077347605b61ea0899ddebed">00095</a> <a class="code" href="class_tablica.html#ae1408ffc077347605b61ea0899ddebed" title="Konstruktor klasy Tablica. Jego argumentem jest maksymalny rozmiar tablicy.">Tablica&lt;K,W&gt;::Tablica</a>(<span class="keywordtype">int</span> rozmiar){
+<a name="l00096"></a>00096         tablica = <span class="keyword">new</span> <a class="code" href="class_para.html" title="Modeluje pojecie pary. Jej atrybutem sa pola zawierajace klucz i wartosci.">Para&lt;K,W&gt;</a>*[rozmiar];
+<a name="l00097"></a>00097         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0;i&lt;rozmiar;++i)
+<a name="l00098"></a>00098                 tablica[i] = NULL;
+<a name="l00099"></a>00099         liczbaElementow = 0;
+<a name="l00100"></a>00100         this-&gt;rozmiar = rozmiar;
+<a name="l00101"></a>00101 }
+<a name="l00102"></a>00102 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W&gt;
+<a name="l00103"></a><a class="code" href="class_tablica.html#aabb6e01e32fd2d32ddcfba2c10b9ec5e">00103</a> <a class="code" href="class_tablica.html#aabb6e01e32fd2d32ddcfba2c10b9ec5e" title="Destruktor klasy Tablica. Czysci pamiec.">Tablica&lt;K,W&gt;::~Tablica</a>(){
+<a name="l00104"></a>00104         <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i;i&lt;rozmiar;++i){
+<a name="l00105"></a>00105                 <span class="keywordflow">if</span>(tablica[i]!=NULL){
+<a name="l00106"></a>00106                         <span class="keyword">delete</span> tablica[i];
+<a name="l00107"></a>00107                 }
+<a name="l00108"></a>00108         }
+<a name="l00109"></a>00109         <span class="keyword">delete</span> []tablica;
+<a name="l00110"></a>00110 }
+<a name="l00111"></a>00111 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W&gt;
+<a name="l00112"></a><a class="code" href="class_tablica.html#aebb17d3366e37c8b4852df08eae2a1de">00112</a> <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#aebb17d3366e37c8b4852df08eae2a1de" title="Funkcja dodaj. Dodaje krotke do tablicy.">Tablica&lt;K,W&gt;::dodaj</a>(<a class="code" href="class_para.html" title="Modeluje pojecie pary. Jej atrybutem sa pola zawierajace klucz i wartosci.">Para&lt;K,W&gt;</a> &amp;para){
+<a name="l00113"></a>00113         <span class="keywordtype">int</span> pozycja=haszstring(para.<a class="code" href="class_para.html#a2290aed234696b309e979ae269e142ff" title="Funkcja pobierzKlucz. Zwraca klucz.">pobierzKlucz</a>());
+<a name="l00114"></a>00114         <span class="keywordflow">if</span>(tablica[pozycja] == NULL)
+<a name="l00115"></a>00115                 tablica[pozycja]= <span class="keyword">new</span> <a class="code" href="class_para.html" title="Modeluje pojecie pary. Jej atrybutem sa pola zawierajace klucz i wartosci.">Para&lt;K,W&gt;</a>(para);
+<a name="l00116"></a>00116         <span class="keywordflow">else</span>{
+<a name="l00117"></a>00117                 tablica[pozycja]-&gt;<a class="code" href="class_para.html#a5582293e44ba99f062dcb9fa8e99beaf" title="Funkcja ustawKlucz. Ustawia klucz.">ustawKlucz</a>(para.<a class="code" href="class_para.html#a2290aed234696b309e979ae269e142ff" title="Funkcja pobierzKlucz. Zwraca klucz.">pobierzKlucz</a>());
+<a name="l00118"></a>00118                 tablica[pozycja]-&gt;ustawWartosc(para.<a class="code" href="class_para.html#a3081579446074d32816e0299743208ca" title="Funkcja pobierzWartosc. Zwraca wartosc.">pobierzWartosc</a>());
+<a name="l00119"></a>00119         }
+<a name="l00120"></a>00120         ++liczbaElementow;
+<a name="l00121"></a>00121 }
+<a name="l00122"></a>00122 
+<a name="l00123"></a>00123 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W&gt;
+<a name="l00124"></a><a class="code" href="class_tablica.html#a061a219dd25c6696940f40226d99a99d">00124</a> <span class="keywordtype">void</span> <a class="code" href="class_tablica.html#a061a219dd25c6696940f40226d99a99d" title="Funkcja usun. Usuwa krotke o podanym kluczu.">Tablica&lt;K,W&gt;::usun</a>(K klucz){
+<a name="l00125"></a>00125         <span class="keywordflow">if</span>(tablica[haszstring(klucz)]!=NULL){
+<a name="l00126"></a>00126                 <span class="keyword">delete</span> tablica[haszstring(klucz)];
+<a name="l00127"></a>00127                 tablica [haszstring(klucz)] = NULL;
+<a name="l00128"></a>00128                 --liczbaElementow;
+<a name="l00129"></a>00129         }
+<a name="l00130"></a>00130 }
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132 <span class="keyword">template</span>&lt;<span class="keyword">typename</span> K , <span class="keyword">typename</span> W&gt;
+<a name="l00133"></a><a class="code" href="class_tablica.html#a6de46e3062f16d78c4cb2cf18c9b0de1">00133</a> W <a class="code" href="class_tablica.html#a6de46e3062f16d78c4cb2cf18c9b0de1" title="Funkcja pobierzWartosc.">Tablica&lt;K,W&gt;::pobierzWartosc</a>(K klucz){
+<a name="l00134"></a>00134                 <span class="keywordflow">return</span> tablica[haszstring(klucz)]-&gt;pobierzWartosc();
+<a name="l00135"></a>00135 }
+<a name="l00136"></a>00136 
+<a name="l00137"></a>00137 
+<a name="l00138"></a>00138 <span class="keyword">template</span> &lt;<span class="keyword">typename</span> K, <span class="keyword">typename</span> W&gt;
+<a name="l00139"></a><a class="code" href="class_tablica.html#a7f5a2d2ebe594ec98dd38dfbbb83497d">00139</a> W&amp; <a class="code" href="class_tablica.html#a7f5a2d2ebe594ec98dd38dfbbb83497d" title="Przeciazenie operatora indeksujacego.">Tablica&lt;K,W&gt;::operator[]</a>( K klucz){
+<a name="l00140"></a>00140         <span class="keywordtype">int</span> hash = haszstring(klucz);
+<a name="l00141"></a>00141         <span class="keywordflow">if</span> (tablica[hash]!=NULL)
+<a name="l00142"></a>00142                 <span class="keywordflow">return</span> tablica[hash]-&gt;pobierzWartosc();
+<a name="l00143"></a>00143         <span class="keyword">delete</span> tablica[hash];
+<a name="l00144"></a>00144         tablica[hash] = <span class="keyword">new</span> <a class="code" href="class_para.html" title="Modeluje pojecie pary. Jej atrybutem sa pola zawierajace klucz i wartosci.">Para&lt;K,W&gt;</a>();
+<a name="l00145"></a>00145         tablica[hash]-&gt;<a class="code" href="class_para.html#a5582293e44ba99f062dcb9fa8e99beaf" title="Funkcja ustawKlucz. Ustawia klucz.">ustawKlucz</a>(klucz);
+<a name="l00146"></a>00146         <span class="keywordflow">return</span> tablica[hash]-&gt;pobierzWartosc();
+<a name="l00147"></a>00147 }
+</pre></div></div><!-- contents -->
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Pliki</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Zmienne</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="_tablica_8h.html">Tablica.h</a>      </li>
+
+    <li class="footer">Wygenerowano Tue Apr 22 2014 16:34:33 dla Lab6 programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>

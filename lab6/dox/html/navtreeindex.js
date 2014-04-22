@@ -1,0 +1,26 @@
+var NAVTREEINDEX =
+{
+"index.html":[],
+"annotated.html":[0,0],
+"class_drzewo.html":[0,0,0],
+"class_para.html":[0,0,1],
+"class_tablica.html":[0,0,2],
+"class_wezel.html":[0,0,3],
+"classes.html":[0,1],
+"functions.html":[0,2,0],
+"functions_func.html":[0,2,1],
+"functions_vars.html":[0,2,2],
+"files.html":[1,0],
+"_drzewo_8h.html":[1,0,0],
+"_main_8cpp.html":[1,0,1],
+"_para_8cpp.html":[1,0,2],
+"_para_8h.html":[1,0,3],
+"_tablica_8h.html":[1,0,4],
+"_wezel_8h.html":[1,0,5],
+"globals.html":[1,1,0],
+"globals_func.html":[1,1,1],
+"dirs.html":[2],
+"dir_ec6420f7dab0d6dc90d0aeca5797a0bf.html":[2,0],
+"dir_269ca723671743fe5d05b443db073096.html":[2,0,0],
+"dir_9fd0c07b1190a8b7276b0ba7a5123eb1.html":[2,0,1]
+};

@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$_main_8cpp.html#ab922b9da141e16dbcc98dda9fa91687c" title="gen_random" alt="" coords="141,5,235,35"/>
+<area shape="rect" id="node5" href="$class_tablica.html#aebb17d3366e37c8b4852df08eae2a1de" title="Funkcja dodaj. Dodaje krotke do tablicy." alt="" coords="137,59,239,88"/>
+<area shape="rect" id="node13" href="$class_drzewo.html#af32cbb347cb334efa59ca8bf83f0c343" title="Funkcja dodaj. Dodaje wezel do drzewa." alt="" coords="135,112,241,141"/>
+<area shape="rect" id="node15" href="$class_tablica.html#a6de46e3062f16d78c4cb2cf18c9b0de1" title="Funkcja pobierzWartosc." alt="" coords="107,165,269,195"/>
+<area shape="rect" id="node17" href="$class_drzewo.html#add8d5fe17b7552b3d494fa5b9c49ce6b" title="Funkcja pobierzWartosc. Zwraca wartosc przypisana do klucza." alt="" coords="105,219,271,248"/>
+<area shape="rect" id="node19" href="$class_tablica.html#a061a219dd25c6696940f40226d99a99d" title="Funkcja usun. Usuwa krotke o podanym kluczu." alt="" coords="139,272,237,301"/>
+<area shape="rect" id="node21" href="$class_drzewo.html#a0353214a4242185bd700f361246ad928" title="Funkcja usun. Usuwa wezel z drzewa." alt="" coords="137,325,239,355"/>
+<area shape="rect" id="node7" href="$class_para.html#a2290aed234696b309e979ae269e142ff" title="Funkcja pobierzKlucz. Zwraca klucz." alt="" coords="329,5,460,35"/>
+<area shape="rect" id="node9" href="$class_para.html#a5582293e44ba99f062dcb9fa8e99beaf" title="Funkcja ustawKlucz. Ustawia klucz." alt="" coords="332,59,457,88"/>
+<area shape="rect" id="node11" href="$class_para.html#a3081579446074d32816e0299743208ca" title="Funkcja pobierzWartosc. Zwraca wartosc." alt="" coords="321,112,468,141"/>
+</map>

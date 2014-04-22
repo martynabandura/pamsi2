@@ -3,16 +3,16 @@
 #include <string.h>
 /*!
  * \file
- * \brief Definicja szablonu klasy Tablica(tablica z haszowaniem)
+ * \brief Definicja szablonu klasy Tablica(tablicab z haszowaniem)
  *
- * Plik zawiera definicjê szablonu klasy Tablica.Jest to klasa g³ówna , która
- * wykorzystuje klasê Para.
+ * Plik zawiera definicje szablonu klasy Tablica.Jest to klasa glowna , ktora 
+ * wykorzystuje klase Para.
  */
 
 /*!
-* \brief Modeluje pojêcie tablicy z haszowaniem.
-* Klasa modeluje pojêcie tablicy z haszowaniem.
-* Jej atrybutami s¹ pola: klucz i wartoœæ.
+* \brief Modeluje pojecie tablicy z haszowaniem.
+* Klasa modeluje pojecie tablicy z haszowaniem.
+* Jej atrybutami sa pola: klucz i wartosc.
 */
 template <typename K, typename W>
 class Tablica {
@@ -30,7 +30,7 @@ private:
  */
 	int rozmiar;
 /*!
- *  \brief Funkcja haszuj¹ca dla obiektów typu string.
+ *  \brief Funkcja haszujaca dla obiektow typu string.
  */
     int haszstring(K key);
 public:
@@ -41,7 +41,7 @@ public:
 	Tablica(int rozmiar);
 /*! 
 * \brief Destruktor klasy Tablica.
-* Czyœci pamiêæ.
+* Czysci pamiec.
 */
 	~Tablica();
 /*! 
@@ -56,7 +56,7 @@ public:
 	void usun ( K klucz);
 /*! 
 * \brief Funkcja pobierzWartosc
-* \return Zwraca wartoœæ przypisana do danego klucza.
+* \return Zwraca wartosc przypisana do danego klucza.
 */
 	W pobierzWartosc(K klucz);
  /*!
@@ -76,7 +76,7 @@ public:
 	}
  
 /*!
- * \brief Przeci¹¿enie operatora indeksuj¹cego.
+ * \brief Przeciazenie operatora indeksujacego.
  * \return Zwraca wartosc.
  */
 	W& operator[](K klucz);

@@ -1,0 +1,246 @@
+\hypertarget{class_tablica}{\section{\-Dokumentacja szablonu klasy \-Tablica$<$ \-K, \-W $>$}
+\label{class_tablica}\index{\-Tablica$<$ K, W $>$@{\-Tablica$<$ K, W $>$}}
+}
+
+
+{\ttfamily \#include $<$\-Tablica.\-h$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tablica_ae1408ffc077347605b61ea0899ddebed}{\-Tablica} (int \hyperlink{class_tablica_a40b3c86ceb2ec860b9d19ce0e866b406}{rozmiar})
+\item 
+\hyperlink{class_tablica_aabb6e01e32fd2d32ddcfba2c10b9ec5e}{$\sim$\-Tablica} ()
+\item 
+void \hyperlink{class_tablica_aebb17d3366e37c8b4852df08eae2a1de}{dodaj} (\hyperlink{class_para}{\-Para}$<$ \-K, \-W $>$ \&para)
+\item 
+void \hyperlink{class_tablica_a061a219dd25c6696940f40226d99a99d}{usun} (\-K klucz)
+\item 
+\-W \hyperlink{class_tablica_a6de46e3062f16d78c4cb2cf18c9b0de1}{pobierz\-Wartosc} (\-K klucz)
+\item 
+bool \hyperlink{class_tablica_a19d8da0353d73517375cf6b2984f9d5c}{czypusta} ()
+\item 
+int \hyperlink{class_tablica_aabc40f316cf398a07e3035b1c4adc256}{size} ()
+\item 
+\-W \& \hyperlink{class_tablica_a7f5a2d2ebe594ec98dd38dfbbb83497d}{operator\mbox{[}$\,$\mbox{]}} (\-K klucz)
+\end{DoxyCompactItemize}
+\subsection*{\-Metody prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_tablica_a8fd66d75553eb44aa043f917fd9317dc}{haszstring} (\-K key)
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_para}{\-Para}$<$ \-K, \-W $>$ $\ast$$\ast$ \hyperlink{class_tablica_a0d6b03ac0a2b996d4096038ef9315e9a}{tablica}
+\item 
+int \hyperlink{class_tablica_a603b571fcc0d29b757bfd5fe27d0fadc}{liczba\-Elementow}
+\item 
+int \hyperlink{class_tablica_a40b3c86ceb2ec860b9d19ce0e866b406}{rozmiar}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\subsubsection*{template$<$typename \-K, typename \-W$>$class Tablica$<$ K, W $>$}
+
+\-Modeluje pojecie tablicy z haszowaniem. \-Klasa modeluje pojecie tablicy z haszowaniem. \-Jej atrybutami sa pola\-: klucz i wartosc. 
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_tablica_ae1408ffc077347605b61ea0899ddebed}{\index{\-Tablica@{\-Tablica}!\-Tablica@{\-Tablica}}
+\index{\-Tablica@{\-Tablica}!Tablica@{\-Tablica}}
+\subsubsection[{\-Tablica}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ {\bf \-Tablica}$<$ \-K, \-W $>$\-::{\bf \-Tablica} (
+\begin{DoxyParamCaption}
+\item[{int}]{rozmiar}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_ae1408ffc077347605b61ea0899ddebed}
+
+
+\-Konstruktor klasy \hyperlink{class_tablica}{\-Tablica}. \-Jego argumentem jest maksymalny rozmiar tablicy. 
+
+\hypertarget{class_tablica_aabb6e01e32fd2d32ddcfba2c10b9ec5e}{\index{\-Tablica@{\-Tablica}!$\sim$\-Tablica@{$\sim$\-Tablica}}
+\index{$\sim$\-Tablica@{$\sim$\-Tablica}!Tablica@{\-Tablica}}
+\subsubsection[{$\sim$\-Tablica}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ {\bf \-Tablica}$<$ \-K, \-W $>$\-::$\sim${\bf \-Tablica} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_aabb6e01e32fd2d32ddcfba2c10b9ec5e}
+
+
+\-Destruktor klasy \hyperlink{class_tablica}{\-Tablica}. \-Czysci pamiec. 
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_tablica_a19d8da0353d73517375cf6b2984f9d5c}{\index{\-Tablica@{\-Tablica}!czypusta@{czypusta}}
+\index{czypusta@{czypusta}!Tablica@{\-Tablica}}
+\subsubsection[{czypusta}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-K, typename \-W$>$ bool {\bf \-Tablica}$<$ \-K, \-W $>$\-::{\bf czypusta} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_tablica_a19d8da0353d73517375cf6b2984f9d5c}
+
+
+\-Sprawdza zapelnienie tablicy. 
+
+\begin{DoxyReturn}{\-Zwraca}
+zwraca prawde, gdy tablica jest pusta 
+\end{DoxyReturn}
+\hypertarget{class_tablica_aebb17d3366e37c8b4852df08eae2a1de}{\index{\-Tablica@{\-Tablica}!dodaj@{dodaj}}
+\index{dodaj@{dodaj}!Tablica@{\-Tablica}}
+\subsubsection[{dodaj}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ void {\bf \-Tablica}$<$ \-K, \-W $>$\-::{\bf dodaj} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Para}$<$ \-K, \-W $>$ \&}]{para}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_aebb17d3366e37c8b4852df08eae2a1de}
+
+
+\-Funkcja dodaj. \-Dodaje krotke do tablicy. 
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_tablica_aebb17d3366e37c8b4852df08eae2a1de_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{class_tablica_aebb17d3366e37c8b4852df08eae2a1de_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_tablica_a8fd66d75553eb44aa043f917fd9317dc}{\index{\-Tablica@{\-Tablica}!haszstring@{haszstring}}
+\index{haszstring@{haszstring}!Tablica@{\-Tablica}}
+\subsubsection[{haszstring}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ int {\bf \-Tablica}$<$ \-K, \-W $>$\-::{\bf haszstring} (
+\begin{DoxyParamCaption}
+\item[{\-K}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_tablica_a8fd66d75553eb44aa043f917fd9317dc}
+
+
+\-Funkcja haszujaca dla obiektow typu string. 
+
+\hypertarget{class_tablica_a7f5a2d2ebe594ec98dd38dfbbb83497d}{\index{\-Tablica@{\-Tablica}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Tablica@{\-Tablica}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ \-W \& {\bf \-Tablica}$<$ \-K, \-W $>$\-::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{\-K}]{klucz}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_a7f5a2d2ebe594ec98dd38dfbbb83497d}
+
+
+\-Przeciazenie operatora indeksujacego. 
+
+\begin{DoxyReturn}{\-Zwraca}
+\-Zwraca wartosc. 
+\end{DoxyReturn}
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_tablica_a7f5a2d2ebe594ec98dd38dfbbb83497d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_tablica_a6de46e3062f16d78c4cb2cf18c9b0de1}{\index{\-Tablica@{\-Tablica}!pobierz\-Wartosc@{pobierz\-Wartosc}}
+\index{pobierz\-Wartosc@{pobierz\-Wartosc}!Tablica@{\-Tablica}}
+\subsubsection[{pobierz\-Wartosc}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ \-W {\bf \-Tablica}$<$ \-K, \-W $>$\-::{\bf pobierz\-Wartosc} (
+\begin{DoxyParamCaption}
+\item[{\-K}]{klucz}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_a6de46e3062f16d78c4cb2cf18c9b0de1}
+
+
+\-Funkcja pobierz\-Wartosc. 
+
+\begin{DoxyReturn}{\-Zwraca}
+\-Zwraca wartosc przypisana do danego klucza. 
+\end{DoxyReturn}
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_tablica_a6de46e3062f16d78c4cb2cf18c9b0de1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_tablica_aabc40f316cf398a07e3035b1c4adc256}{\index{\-Tablica@{\-Tablica}!size@{size}}
+\index{size@{size}!Tablica@{\-Tablica}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-K, typename \-W$>$ int {\bf \-Tablica}$<$ \-K, \-W $>$\-::{\bf size} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{class_tablica_aabc40f316cf398a07e3035b1c4adc256}
+
+
+\-Podaje liczbe elementow w tablicy. 
+
+\begin{DoxyReturn}{\-Zwraca}
+zwraca liczbe elementow w tablicy. 
+\end{DoxyReturn}
+\hypertarget{class_tablica_a061a219dd25c6696940f40226d99a99d}{\index{\-Tablica@{\-Tablica}!usun@{usun}}
+\index{usun@{usun}!Tablica@{\-Tablica}}
+\subsubsection[{usun}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename K , typename W $>$ void {\bf \-Tablica}$<$ \-K, \-W $>$\-::{\bf usun} (
+\begin{DoxyParamCaption}
+\item[{\-K}]{klucz}
+\end{DoxyParamCaption}
+)}}\label{class_tablica_a061a219dd25c6696940f40226d99a99d}
+
+
+\-Funkcja usun. \-Usuwa krotke o podanym kluczu. 
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{class_tablica_a061a219dd25c6696940f40226d99a99d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_tablica_a603b571fcc0d29b757bfd5fe27d0fadc}{\index{\-Tablica@{\-Tablica}!liczba\-Elementow@{liczba\-Elementow}}
+\index{liczba\-Elementow@{liczba\-Elementow}!Tablica@{\-Tablica}}
+\subsubsection[{liczba\-Elementow}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-K, typename \-W$>$ int {\bf \-Tablica}$<$ \-K, \-W $>$\-::{\bf liczba\-Elementow}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_tablica_a603b571fcc0d29b757bfd5fe27d0fadc}
+
+
+\-Obecna liczba elementow w tablicy. 
+
+\hypertarget{class_tablica_a40b3c86ceb2ec860b9d19ce0e866b406}{\index{\-Tablica@{\-Tablica}!rozmiar@{rozmiar}}
+\index{rozmiar@{rozmiar}!Tablica@{\-Tablica}}
+\subsubsection[{rozmiar}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-K, typename \-W$>$ int {\bf \-Tablica}$<$ \-K, \-W $>$\-::{\bf rozmiar}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_tablica_a40b3c86ceb2ec860b9d19ce0e866b406}
+
+
+\-Maksymalna liczba elementow w tablicy. 
+
+\hypertarget{class_tablica_a0d6b03ac0a2b996d4096038ef9315e9a}{\index{\-Tablica@{\-Tablica}!tablica@{tablica}}
+\index{tablica@{tablica}!Tablica@{\-Tablica}}
+\subsubsection[{tablica}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename \-K, typename \-W$>$ {\bf \-Para}$<$\-K,\-W$>$$\ast$$\ast$ {\bf \-Tablica}$<$ \-K, \-W $>$\-::{\bf tablica}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_tablica_a0d6b03ac0a2b996d4096038ef9315e9a}
+
+
+\hyperlink{class_tablica}{\-Tablica} par. 
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z pliku\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_tablica_8h}{\-Tablica.\-h}\end{DoxyCompactItemize}
