@@ -22,6 +22,9 @@ template <typename T>
 void wypelnij(T **tab, int rozmiar, int procent_posortowanych);
 
 template <typename T>
+void wypelnij_odwrotnie(T **tab, int rozmiar);
+
+template <typename T>
 bool sprawdz_porzadek(T **tab, int rozmiar);
 
 template <typename T>
@@ -93,6 +96,14 @@ void Merge::wypelnij(T **tab, int rozmiar, int procent_posortowanych){
 }
 
 template <typename T>
+void Merge::wypelnij_odwrotnie(T **tab, int rozmiar){
+
+	for(int i=0; i<100; i++)
+		for(int j=rozmiar-1; j>=0; j--)
+			tab[i][j] = rozmiar-j-1;
+}
+
+template <typename T>
 bool Merge::sprawdz_porzadek(T **tab, int rozmiar){
 	for(int i=0; i<100; i++) {
 		for(int j=1; j<rozmiar; j++) {
@@ -122,10 +133,6 @@ void Merge::wyswietl(T **tab, int rozmiar)
 		cout << endl;
 	}
 }
-
-
-
-
 
 #endif
 

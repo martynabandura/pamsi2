@@ -3,10 +3,10 @@
 __start__: a.out
 	./a.out
 
-a.out: obj/glowny.o obj/quick.o obj/tablica.o obj/dzialania.o obj/merge.o
-	g++ glowny.o quick.o tablica.o dzialania.o merge.o
+a.out: obj/glowny.o obj/quick.o obj/merge.o obj/sort_benchmark.o 
+	g++ glowny.o quick.o merge.o sort_benchmark.o
 
-obj/glowny.o: src/glowny.cpp inc/quick.hpp src/tablica.cpp inc/merge.hpp
+obj/glowny.o: src/glowny.cpp inc/quick.hpp inc/merge.hpp
 	g++ -c  src/glowny.cpp
 
 obj/quick.o: inc/quick.hpp src/quick.cpp
@@ -14,12 +14,6 @@ obj/quick.o: inc/quick.hpp src/quick.cpp
 
 obj/merge.o: inc/merge.hpp src/merge.cpp
 	g++ -c src/merge.cpp
-
-obj/dzialania.o: inc/dzialania.hpp src/dzialania.cpp src/tablica.cpp
-	g++ -c src/dzialania.cpp
-
-obj/tablica.o: inc/tablica.hpp src/tablica.cpp
-	g++ -c src/tablica.cpp
-
-obj/czas.o: inc/czas.hpp src/czas.cpp
-	g++ -c src/czas.cpp
+	
+obj/sort_benchmark.o: inc/sort_benchmark.hpp src/sort_benchmark.cpp
+	g++ -c src/sort_benchmark.cpp

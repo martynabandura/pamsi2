@@ -7,8 +7,6 @@
 
 using namespace std;
 
-
-
 /* \brief Szablon funkcji tylko do uzytku wewnetrznego. Nie powinna byc uruchamiana osobno.
 *
 */
@@ -28,8 +26,10 @@ template <typename T>
 void Quick::quick_sort(T *Poczatek, T *Koniec) {
 	T* Lewy = Poczatek;
 	T* Prawy = Koniec;
-	T Pivot;
-	Pivot = *Lewy;
+	size_t Rozmiar = Koniec - Poczatek;
+	size_t n = rand() % Rozmiar;
+	T Pivot = *(Lewy + n);
+	//! TODO analiza dla T Pivot = *Lewy;
 	bool SunPrawy = true;
 
 	while(Lewy != Prawy) {
@@ -68,9 +68,7 @@ void Quick::wypelnij(T **tab, int rozmiar, int procent_posortowanych){
 	for(int i=0; i<100; i++) {
 		for(int j=0; j<ilosc_posortowanych; j++)
 		tab[i][j] = j;
-	}
 
-	for(int i=0; i<100; i++) {
 		for(int j=ilosc_posortowanych; j<rozmiar; j++)
 		tab[i][j] = rand()%(zakres-ilosc_posortowanych) + ilosc_posortowanych;
 	}
@@ -80,23 +78,17 @@ void Quick::wypelnij(T **tab, int rozmiar, int procent_posortowanych){
 template <typename T>
 void Quick::wypelnij_odwrotnie(T **tab, int rozmiar){
 
-	for(int i=0; i<100; i++) {
+	for(int i=0; i<100; i++)
 		for(int j=rozmiar-1; j>=0; j--)
-		tab[i][j] = j;
-	}
-
+			tab[i][j] = rozmiar-j-1;
 }
 
 template <typename T>
 bool Quick::sprawdz_porzadek(T **tab, int rozmiar){
-	for(int i=0; i<100; i++) {
-		for(int j=1; j<rozmiar; j++) {
-			if(tab[i][j]<tab[i][j-1])	{
+	for(int i=0; i<100; i++)
+		for(int j=0; j<rozmiar-1; j++)
+			if(tab[i][j]>tab[i][j+1])
 				return 0;
-			}
-		}
-	}
-
 	return 1;
 }
 
@@ -115,10 +107,6 @@ void Quick::wyswietl(T **tab, int rozmiar) {
 		cout << endl;
 	}
 }
-
-
-void usun_tablica(int **tab);
-
 
 #endif
 
