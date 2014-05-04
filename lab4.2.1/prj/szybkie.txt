@@ -1,41 +1,18 @@
 sortowanie szybkie: 
-rozmiar tablicy100
-posortowane0% elementow czas: 0s
-posortowane25% elementow czas: 0s
-posortowane50% elementow czas: 0s
-posortowane75% elementow czas: 0s
-posortowane95% elementow czas: 0s
-posortowane99% elementow czas: 0s
-posortowane odwrotnie czas: 0s
-rozmiar tablicy500
-posortowane0% elementow czas: 0s
-posortowane25% elementow czas: 0.01s
-posortowane50% elementow czas: 0s
-posortowane75% elementow czas: 0.01s
-posortowane95% elementow czas: 0s
-posortowane99% elementow czas: 0s
-posortowane odwrotnie czas: 0s
-rozmiar tablicy1000
-posortowane0% elementow czas: 0.01s
-posortowane25% elementow czas: 0s
-posortowane50% elementow czas: 0.01s
-posortowane75% elementow czas: 0.01s
-posortowane95% elementow czas: 0s
-posortowane99% elementow czas: 0s
-posortowane odwrotnie czas: 0s
-rozmiar tablicy5000
-posortowane0% elementow czas: 0.05s
-posortowane25% elementow czas: 0.05s
-posortowane50% elementow czas: 0.04s
-posortowane75% elementow czas: 0.03s
-posortowane95% elementow czas: 0.03s
-posortowane99% elementow czas: 0.02s
-posortowane odwrotnie czas: 0.03s
 rozmiar tablicy10000
-posortowane0% elementow czas: 0.1s
-posortowane25% elementow czas: 0.1s
+posortowane0% elementow czas: 0.11s
+posortowane25% elementow czas: 0.09s
 posortowane50% elementow czas: 0.08s
 posortowane75% elementow czas: 0.06s
 posortowane95% elementow czas: 0.05s
 posortowane99% elementow czas: 0.05s
 posortowane odwrotnie czas: 0.05s
+rozmiar tablicy50000
+posortowane0% elementow czas: 0.58s
+posortowane25% elementow czas: 0.51s
+posortowane50% elementow czas: 0.47s
+posortowane75% elementow czas: 0.37s
+posortowane95% elementow czas: 0.31s
+posortowane99% elementow czas: 0.31s
+posortowane odwrotnie czas: 0.31s
+rozmiar tablicy100000

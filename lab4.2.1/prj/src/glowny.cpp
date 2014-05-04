@@ -6,7 +6,8 @@
  */
 
 
-/** \file main.cpp
+/*!
+* \file
 * \brief Plik zawiera glowna funkcje programu.
 */
 

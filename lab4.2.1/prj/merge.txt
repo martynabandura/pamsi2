@@ -1,0 +1,41 @@
+sortowanie merge: 
+rozmiar tablicy100
+posortowane0% elementow czas: 0s
+posortowane25% elementow czas: 0s
+posortowane50% elementow czas: 0s
+posortowane75% elementow czas: 0s
+posortowane95% elementow czas: 0.01s
+posortowane99% elementow czas: 0s
+posortowane odwrotnie czas: 0s
+rozmiar tablicy500
+posortowane0% elementow czas: 0s
+posortowane25% elementow czas: 0.01s
+posortowane50% elementow czas: 0s
+posortowane75% elementow czas: 0s
+posortowane95% elementow czas: 0.01s
+posortowane99% elementow czas: 0s
+posortowane odwrotnie czas: 0.01s
+rozmiar tablicy1000
+posortowane0% elementow czas: 0s
+posortowane25% elementow czas: 0s
+posortowane50% elementow czas: 0s
+posortowane75% elementow czas: 0s
+posortowane95% elementow czas: 0.01s
+posortowane99% elementow czas: 0.01s
+posortowane odwrotnie czas: 0s
+rozmiar tablicy5000
+posortowane0% elementow czas: 0.05s
+posortowane25% elementow czas: 0.05s
+posortowane50% elementow czas: 0.04s
+posortowane75% elementow czas: 0.04s
+posortowane95% elementow czas: 0.05s
+posortowane99% elementow czas: 0.04s
+posortowane odwrotnie czas: 0.04s
+rozmiar tablicy10000
+posortowane0% elementow czas: 0.09s
+posortowane25% elementow czas: 0.09s
+posortowane50% elementow czas: 0.09s
+posortowane75% elementow czas: 0.1s
+posortowane95% elementow czas: 0.09s
+posortowane99% elementow czas: 0.09s
+posortowane odwrotnie czas: 0.09s

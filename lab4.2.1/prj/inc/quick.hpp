@@ -1,5 +1,5 @@
-/*
-* quicksort.hh
+/*!
+* \file
 * \brief Plik zawiera definicje szablonu sortowania szybkiego.
 */
 #ifndef _QUICK_HPP
@@ -7,9 +7,11 @@
 
 using namespace std;
 
-/* \brief Szablon funkcji tylko do uzytku wewnetrznego. Nie powinna byc uruchamiana osobno.
-*
+/*! 
+* \brief Modeluje pojecie Quick.
+* Szablon funkcji sortowania szybkiego
 */
+
 class Quick
 {
 public:
@@ -26,9 +28,9 @@ template <typename T>
 void Quick::quick_sort(T *Poczatek, T *Koniec) {
 	T* Lewy = Poczatek;
 	T* Prawy = Koniec;
-	size_t Rozmiar = Koniec - Poczatek;
-	size_t n = rand() % Rozmiar;
-	T Pivot = *(Lewy + n);
+	size_t Rozmiar = Koniec - Poczatek; //lepszy pivot
+	size_t n = rand() % Rozmiar;		//lepszy pivot
+	T Pivot = *(Lewy + n);				//lepszy pivot
 	//! TODO analiza dla T Pivot = *Lewy;
 	bool SunPrawy = true;
 

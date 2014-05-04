@@ -1,13 +1,16 @@
-/*
-* merge.hh
-* \brief Plik zawiera definicje funkcji sortowania przez scalanie dla klasy Array.
+/*!
+* \file 
+* \brief Plik zawiera definicje funkcji sortowania merge
 */
 
 #ifndef _MERGE_HPP
 #define _MERGE_HPP
 using namespace std;
 
-
+/*! 
+* \brief Modeluje pojecie Merge.
+* Szablon funkcji sortowania przez scalanie
+*/
 class Merge
 {
 public:
