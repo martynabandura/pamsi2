@@ -2,8 +2,8 @@
 #include <iostream>
 #include <list>
 #include <algorithm>
-#include <set>
 #include <limits>
+#include <set>
 
 #define WALLY 15
 std::list<int> depth_first(Graf& cos, int poczatek, int koniec, std::list<int> historia) {
@@ -92,7 +92,7 @@ double liczKoszt(Graf& cos, std::list<int> droga) {
 //   end while
  
 
-std::list<int> best_first(Graf& cos, int poczatek, int koniec) {
+std::list<int> a_star(Graf& cos, int poczatek, int koniec) {
 	int* odleglosc = new int[cos.rozmiar()]; 
 		std::fill(odleglosc, odleglosc+cos.rozmiar(), std::numeric_limits<int>::max() );
 	int* f = new int[cos.rozmiar()];
@@ -112,8 +112,8 @@ std::list<int> best_first(Graf& cos, int poczatek, int koniec) {
 	Q.insert(poczatek);
 	while(!Q.empty() ) {
 		// prezentacja przebiegu wyszukiwania
-		//~ for( auto it = Q.begin(); it != Q.end(); ++it )
-		//~	std::cerr << *it << ", "; std::cerr << "\n";
+		 for( auto it = Q.begin(); it != Q.end(); ++it )
+			std::cerr << *it << ", "; std::cerr << "\n";
 		auto u = *Q.begin();
 		Q.erase(Q.begin());
 		for(auto v : cos.sasiedztwo(u) ) {
@@ -140,46 +140,4 @@ std::list<int> best_first(Graf& cos, int poczatek, int koniec) {
 	//~ std::cerr << odleglosc[koniec] << " <- długość znalezionej ścieżki! \n";
 	for(int i = koniec; i != -1; i = rodzic[i]) ret.push_front(i);
 	return ret;
-}
-
-
-int main(int argc, char** argv) {
-
-	/*
-	Graf cos(6);
-	cos.dod_kraw(1, 2, 4);
-	cos.dod_kraw(2, 3, 4);
-	cos.dod_kraw(1, 4, 3);
-	cos.dod_kraw(3, 5, 6);
-	cos.dod_kraw(4, 6, 5);
-	cos.dod_kraw(0, 1, 3);
-	cos.dod_kraw(0, 2, 5);
-	*/
-	   
-	Graf cos(16);
-	cos.dod_kraw(0, 1, 1);
-	cos.dod_kraw(1, 4, 4);
-	cos.dod_kraw(4, 5, 5);
-	cos.dod_kraw(4, 6, 6);
-	cos.dod_kraw(4, 7, 7);
-	cos.dod_kraw(6, 8, 8);
-	cos.dod_kraw(7, 2, 9);
-	cos.dod_kraw(2, 15, 10);
-	cos.dod_kraw(2, 9, 11);
-	cos.dod_kraw(2, 10, 12);
-	cos.dod_kraw(0, 2, 2);
-	cos.dod_kraw(0, 3, 3);
-	cos.dod_kraw(3, 11, 13);
-	cos.dod_kraw(11, 13, 14);
-	cos.dod_kraw(11, 14, 15);
-	cos.dod_kraw(3, 12, 16);
-	cos.dod_kraw(12, 1, 17);
-
-	for( auto t : depth_first(cos, 0, WALLY ) ) std::cerr << t << " -> "; std::cerr << "\n";
-	for( auto t : breadth_first(cos, 0, WALLY ) ) std::cerr << t << " -> "; std::cerr << "\n";
-	for( auto t : best_first(cos, 0, WALLY ) ) std::cerr << t << " -> "; std::cerr << "\n";
-
-	//~ std::cerr << liczKoszt(cos, depth_first(cos, 0, 6, temp) ) << "\n";
-
-	return 0;
 }

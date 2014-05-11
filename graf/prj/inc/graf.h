@@ -1,3 +1,5 @@
+#ifndef GRAF_H
+#define GRAF_H
 #include<list>
 
 class Graf {
@@ -15,3 +17,4 @@ class Graf {
 		std::list<int> sasiedztwo (int v);
 		const int rozmiar() const;
 };
+#endif
