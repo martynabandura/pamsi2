@@ -1,0 +1,25 @@
+var NAVTREEINDEX =
+{
+"index.html":[],
+"annotated.html":[0,0],
+"class_graf.html":[0,0,0],
+"classes.html":[0,1],
+"functions.html":[0,2,0],
+"functions_func.html":[0,2,1],
+"functions_vars.html":[0,2,2],
+"files.html":[1,0],
+"benchmark_8cpp.html":[1,0,0],
+"benchmark_8h.html":[1,0,1],
+"graf_8cpp.html":[1,0,2],
+"graf_8h.html":[1,0,3],
+"main_8cpp.html":[1,0,4],
+"szukajki_8cpp.html":[1,0,5],
+"szukajki_8h.html":[1,0,6],
+"globals.html":[1,1,0],
+"globals_func.html":[1,1,1],
+"globals_defs.html":[1,1,2],
+"dirs.html":[2],
+"dir_01d7db6dcbd9ee9eb2513e350ed3be5b.html":[2,0],
+"dir_3823f649f201ab38ac9f9627a6a7b058.html":[2,0,0],
+"dir_02f7d643b664388aa50f6742704a651d.html":[2,0,1]
+};

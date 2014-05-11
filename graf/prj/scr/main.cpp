@@ -3,6 +3,11 @@
 #include <iostream>
 #include "benchmark.h"
 
+/*!
+* \file
+* \brief Plik zawiera glowna funkcje programu.
+*/
+
 int main(int argc, char** argv) {
 	/*
 	Graf cos(6);

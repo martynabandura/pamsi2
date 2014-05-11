@@ -1,0 +1,201 @@
+\hypertarget{szukajki_8h}{\section{\-Dokumentacja pliku szukajki.\-h}
+\label{szukajki_8h}\index{szukajki.\-h@{szukajki.\-h}}
+}
+
+
+\-Plik zawiera definicje funkcji szukajki.  
+
+
+{\ttfamily \#include \char`\"{}graf.\-h\char`\"{}}\*
+{\ttfamily \#include $<$iostream$>$}\*
+{\ttfamily \#include $<$list$>$}\*
+\-Wykres zależności załączania dla szukajki.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{szukajki_8h__incl}
+\end{center}
+\end{figure}
+\-Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{szukajki_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{\-Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+std\-::list$<$ int $>$ \hyperlink{szukajki_8h_a536e69aa7f75ebf65321838eaa5b535b}{depth\-\_\-first} (\hyperlink{class_graf}{\-Graf} \&cos, int poczatek, int koniec, std\-::list$<$ int $>$ historia)
+\item 
+std\-::list$<$ int $>$ \hyperlink{szukajki_8h_a7b032574cc2090ceeb7725d81705e791}{depth\-\_\-first} (\hyperlink{class_graf}{\-Graf} \&cos, int poczatek, int koniec)
+\item 
+std\-::list$<$ int $>$ \hyperlink{szukajki_8h_a520d7f85b9377df6341c9935d2a8a7f6}{breadth\-\_\-first} (\hyperlink{class_graf}{\-Graf} \&cos, const int poczatek, const int koniec)
+\item 
+double \hyperlink{szukajki_8h_a020c61195a8975d1449ea395a81aba30}{licz\-Koszt} (\hyperlink{class_graf}{\-Graf} \&cos, std\-::list$<$ int $>$ droga)
+\item 
+std\-::list$<$ int $>$ \hyperlink{szukajki_8h_a5b32516af3ae3ac383db8cd7a6827bec}{a\-\_\-star} (\hyperlink{class_graf}{\-Graf} \&cos, int poczatek, int koniec)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+
+
+\-Definicja w pliku \hyperlink{szukajki_8h_source}{szukajki.\-h}.
+
+
+
+\subsection{\-Dokumentacja funkcji}
+\hypertarget{szukajki_8h_a5b32516af3ae3ac383db8cd7a6827bec}{\index{szukajki.\-h@{szukajki.\-h}!a\-\_\-star@{a\-\_\-star}}
+\index{a\-\_\-star@{a\-\_\-star}!szukajki.h@{szukajki.\-h}}
+\subsubsection[{a\-\_\-star}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$int$>$ {\bf a\-\_\-star} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Graf} \&}]{cos, }
+\item[{int}]{poczatek, }
+\item[{int}]{koniec}
+\end{DoxyParamCaption}
+)}}\label{szukajki_8h_a5b32516af3ae3ac383db8cd7a6827bec}
+
+
+\-Definicja w linii 103 pliku szukajki.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{szukajki_8h_a5b32516af3ae3ac383db8cd7a6827bec_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{szukajki_8h_a5b32516af3ae3ac383db8cd7a6827bec_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{szukajki_8h_a520d7f85b9377df6341c9935d2a8a7f6}{\index{szukajki.\-h@{szukajki.\-h}!breadth\-\_\-first@{breadth\-\_\-first}}
+\index{breadth\-\_\-first@{breadth\-\_\-first}!szukajki.h@{szukajki.\-h}}
+\subsubsection[{breadth\-\_\-first}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$int$>$ {\bf breadth\-\_\-first} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Graf} \&}]{cos, }
+\item[{const int}]{poczatek, }
+\item[{const int}]{koniec}
+\end{DoxyParamCaption}
+)}}\label{szukajki_8h_a520d7f85b9377df6341c9935d2a8a7f6}
+
+
+\-Definicja w linii 32 pliku szukajki.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{szukajki_8h_a520d7f85b9377df6341c9935d2a8a7f6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{szukajki_8h_a520d7f85b9377df6341c9935d2a8a7f6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{szukajki_8h_a536e69aa7f75ebf65321838eaa5b535b}{\index{szukajki.\-h@{szukajki.\-h}!depth\-\_\-first@{depth\-\_\-first}}
+\index{depth\-\_\-first@{depth\-\_\-first}!szukajki.h@{szukajki.\-h}}
+\subsubsection[{depth\-\_\-first}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$int$>$ {\bf depth\-\_\-first} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Graf} \&}]{cos, }
+\item[{int}]{poczatek, }
+\item[{int}]{koniec, }
+\item[{std\-::list$<$ int $>$}]{historia}
+\end{DoxyParamCaption}
+)}}\label{szukajki_8h_a536e69aa7f75ebf65321838eaa5b535b}
+
+
+\-Definicja w linii 17 pliku szukajki.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{szukajki_8h_a536e69aa7f75ebf65321838eaa5b535b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{szukajki_8h_a536e69aa7f75ebf65321838eaa5b535b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{szukajki_8h_a7b032574cc2090ceeb7725d81705e791}{\index{szukajki.\-h@{szukajki.\-h}!depth\-\_\-first@{depth\-\_\-first}}
+\index{depth\-\_\-first@{depth\-\_\-first}!szukajki.h@{szukajki.\-h}}
+\subsubsection[{depth\-\_\-first}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$int$>$ {\bf depth\-\_\-first} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Graf} \&}]{cos, }
+\item[{int}]{poczatek, }
+\item[{int}]{koniec}
+\end{DoxyParamCaption}
+)}}\label{szukajki_8h_a7b032574cc2090ceeb7725d81705e791}
+
+
+\-Definicja w linii 28 pliku szukajki.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{szukajki_8h_a7b032574cc2090ceeb7725d81705e791_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{szukajki_8h_a020c61195a8975d1449ea395a81aba30}{\index{szukajki.\-h@{szukajki.\-h}!licz\-Koszt@{licz\-Koszt}}
+\index{licz\-Koszt@{licz\-Koszt}!szukajki.h@{szukajki.\-h}}
+\subsubsection[{licz\-Koszt}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf licz\-Koszt} (
+\begin{DoxyParamCaption}
+\item[{{\bf \-Graf} \&}]{cos, }
+\item[{std\-::list$<$ int $>$}]{droga}
+\end{DoxyParamCaption}
+)}}\label{szukajki_8h_a020c61195a8975d1449ea395a81aba30}
+
+
+\-Definicja w linii 63 pliku szukajki.\-cpp.
+
+
+
+\-Oto graf wywołań dla tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{szukajki_8h_a020c61195a8975d1449ea395a81aba30_cgraph}
+\end{center}
+\end{figure}
+
+

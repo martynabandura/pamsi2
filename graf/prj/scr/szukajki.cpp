@@ -1,3 +1,11 @@
+/**
+*\file
+*\brief Szukajki 
+* Zawiera najważniejsze fukcje programu.
+* Trzy przeszukiwania grafu - depth first, breadth first, A* 
+*/
+
+
 #include  "graf.h"
 #include <iostream>
 #include <list>

@@ -1,6 +1,14 @@
+/*!
+*\file 
+*\brief Plik naglowkowy klasy Graf.Klasa Graf zawierajaca definicje poszczegolnych funkcji.
+*/
 #ifndef GRAF_H
 #define GRAF_H
 #include<list>
+
+/*!
+*\brief Deklaracja klasy Graf.
+*/
 
 class Graf {
 		double dane [1000][1000];

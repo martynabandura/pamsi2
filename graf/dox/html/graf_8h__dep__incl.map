@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$benchmark_8h.html" title="Plik naglowkowy Benchmark." alt="" coords="5,83,101,112"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title="Plik zawiera glowna funkcje programu." alt="" coords="101,160,176,189"/>
+<area shape="rect" id="node7" href="$szukajki_8h.html" title="Plik zawiera definicje funkcji szukajki." alt="" coords="176,83,256,112"/>
+<area shape="rect" id="node9" href="$benchmark_8cpp.html" title="Benchmark Zawiera fukcje programu liczaca czas przeszukiwan poszczegolnych pomiarow." alt="" coords="219,160,328,189"/>
+<area shape="rect" id="node13" href="$graf_8cpp.html" title="Definicje poszczegolnych funkcji dla klasy Graf." alt="" coords="331,83,400,112"/>
+<area shape="rect" id="node16" href="$szukajki_8cpp.html" title="Szukajki Zawiera najważniejsze fukcje programu. Trzy przeszukiwania grafu &#45; depth first..." alt="" coords="424,83,517,112"/>
+</map>

@@ -1,3 +1,9 @@
+/*!
+*\file
+*\brief Plik zawiera definicje funkcji szukajki
+*/
+
+
 #include  "graf.h"
 #include <iostream>
 #include <list>

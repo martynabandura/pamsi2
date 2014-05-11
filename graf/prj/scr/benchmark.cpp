@@ -1,3 +1,12 @@
+/**
+*\file
+*\brief Benchmark
+* Zawiera fukcje programu liczaca czas przeszukiwan
+* poszczegolnych pomiarow.
+* 
+*/
+
+
 #include "graf.h"
 #include "szukajki.h"
 #include <iostream>

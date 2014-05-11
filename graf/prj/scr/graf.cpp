@@ -1,3 +1,8 @@
+/*!
+*\file 
+*\brief Definicje poszczegolnych funkcji dla klasy Graf.
+*/
+
 #include<list>
 #include "graf.h"
 //~ class Graf {

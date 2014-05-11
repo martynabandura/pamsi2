@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$class_graf.html#a9f9097c607ea725e4aaf738fb6c4fa49" title="Graf::dod_kraw" alt="" coords="105,5,215,35"/>
+<area shape="rect" id="node5" href="$benchmark_8h.html#a4a33bba40119da5e2debd21d9ab45cdb" title="benchmark" alt="" coords="117,59,203,88"/>
+<area shape="rect" id="node7" href="$szukajki_8h.html#a536e69aa7f75ebf65321838eaa5b535b" title="depth_first" alt="" coords="271,136,353,165"/>
+<area shape="rect" id="node14" href="$szukajki_8h.html#a520d7f85b9377df6341c9935d2a8a7f6" title="breadth_first" alt="" coords="265,59,359,88"/>
+<area shape="rect" id="node19" href="$szukajki_8h.html#a5b32516af3ae3ac383db8cd7a6827bec" title="a_star" alt="" coords="283,5,341,35"/>
+<area shape="rect" id="node9" href="$class_graf.html#a98e19234c0961a4e42dda003cbabd274" title="Graf::sasiedztwo" alt="" coords="409,85,529,115"/>
+<area shape="rect" id="node11" href="$class_graf.html#adc0aaf7f7f62343b149538c63c61deda" title="Graf::czy_sasiad" alt="" coords="580,33,700,63"/>
+<area shape="rect" id="node16" href="$class_graf.html#ab452377f7bf7a7034057c9b1c1f2c4fb" title="Graf::rozmiar" alt="" coords="420,32,519,61"/>
+</map>
