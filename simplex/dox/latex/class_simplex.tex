@@ -1,0 +1,192 @@
+\hypertarget{class_simplex}{\section{\-Dokumentacja klasy \-Simplex}
+\label{class_simplex}\index{\-Simplex@{\-Simplex}}
+}
+
+
+\-Deklaracja klasy \hyperlink{class_simplex}{\-Simplex}.  
+
+
+
+
+{\ttfamily \#include $<$simplex.\-h$>$}
+
+\subsection*{\-Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_simplex_af6f55e322195fb36e8ab68262ec67165}{\-Simplex} (int, int, vector$<$ double $>$, vector$<$ double $>$, vector$<$ vector$<$ double $>$ $>$)
+\item 
+void \hyperlink{class_simplex_a35bc6fb855df79d43f50c83adee9a564}{\-Oblicz} ()
+\item 
+double \hyperlink{class_simplex_a62d569cafc5aeb61fa8177cc7301e46f}{\-Max\-Zysk} ()
+\item 
+double \hyperlink{class_simplex_a6989aacd7767392a9871157a8bd8c67d}{\-Wynik} (int)
+\end{DoxyCompactItemize}
+\subsection*{\-Atrybuty prywatne}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_simplex_a0f6d3ab52d2961e257233c81d4c64c81}{l\-Fabryk}
+\item 
+int \hyperlink{class_simplex_af05273be3561d707b029894f551bf1fc}{l\-Produktow}
+\item 
+vector$<$ double $>$ \hyperlink{class_simplex_a3069699ee42dbdb3d94653cefcefd9cc}{zysk\-Produktow}
+\item 
+vector$<$ double $>$ \hyperlink{class_simplex_a274a651cf1805d25483f1c190d41c0b3}{czasy\-Pracy}
+\item 
+vector$<$ vector$<$ double $>$ $>$ \hyperlink{class_simplex_a05c1f84eee26b312e4f918016c435a48}{czasy\-Produkcji}
+\item 
+double \hyperlink{class_simplex_a542e1d670562fb3fa9f11546071c6738}{max\-Zysk}
+\item 
+vector$<$ double $>$ \hyperlink{class_simplex_a18ae1c3fa2099205b28eb7200c061e9c}{wynik}
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Opis szczegółowy}
+\-Deklaracja klasy \hyperlink{class_simplex}{\-Simplex}. 
+
+\-Definicja w linii 17 pliku simplex.\-h.
+
+
+
+\subsection{\-Dokumentacja konstruktora i destruktora}
+\hypertarget{class_simplex_af6f55e322195fb36e8ab68262ec67165}{\index{\-Simplex@{\-Simplex}!\-Simplex@{\-Simplex}}
+\index{\-Simplex@{\-Simplex}!Simplex@{\-Simplex}}
+\subsubsection[{\-Simplex}]{\setlength{\rightskip}{0pt plus 5cm}{\bf \-Simplex\-::\-Simplex} (
+\begin{DoxyParamCaption}
+\item[{int}]{l\-Fabryk, }
+\item[{int}]{l\-Produktow, }
+\item[{vector$<$ double $>$}]{zysk\-Produktow, }
+\item[{vector$<$ double $>$}]{czasy\-Pracy, }
+\item[{vector$<$ vector$<$ double $>$ $>$}]{czasy\-Produkcji}
+\end{DoxyParamCaption}
+)}}\label{class_simplex_af6f55e322195fb36e8ab68262ec67165}
+
+
+\-Definicja w linii 8 pliku simplex.\-cpp.
+
+
+
+\subsection{\-Dokumentacja funkcji składowych}
+\hypertarget{class_simplex_a62d569cafc5aeb61fa8177cc7301e46f}{\index{\-Simplex@{\-Simplex}!\-Max\-Zysk@{\-Max\-Zysk}}
+\index{\-Max\-Zysk@{\-Max\-Zysk}!Simplex@{\-Simplex}}
+\subsubsection[{\-Max\-Zysk}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Simplex\-::\-Max\-Zysk} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_simplex_a62d569cafc5aeb61fa8177cc7301e46f}
+
+
+\-Definicja w linii 152 pliku simplex.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{class_simplex_a62d569cafc5aeb61fa8177cc7301e46f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_simplex_a35bc6fb855df79d43f50c83adee9a564}{\index{\-Simplex@{\-Simplex}!\-Oblicz@{\-Oblicz}}
+\index{\-Oblicz@{\-Oblicz}!Simplex@{\-Simplex}}
+\subsubsection[{\-Oblicz}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf \-Simplex\-::\-Oblicz} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_simplex_a35bc6fb855df79d43f50c83adee9a564}
+
+
+\-Definicja w linii 22 pliku simplex.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_simplex_a35bc6fb855df79d43f50c83adee9a564_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_simplex_a6989aacd7767392a9871157a8bd8c67d}{\index{\-Simplex@{\-Simplex}!\-Wynik@{\-Wynik}}
+\index{\-Wynik@{\-Wynik}!Simplex@{\-Simplex}}
+\subsubsection[{\-Wynik}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Simplex\-::\-Wynik} (
+\begin{DoxyParamCaption}
+\item[{int}]{produkt}
+\end{DoxyParamCaption}
+)}}\label{class_simplex_a6989aacd7767392a9871157a8bd8c67d}
+
+
+\-Definicja w linii 156 pliku simplex.\-cpp.
+
+
+
+\-Oto graf wywoływań tej funkcji\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_simplex_a6989aacd7767392a9871157a8bd8c67d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{\-Dokumentacja atrybutów składowych}
+\hypertarget{class_simplex_a274a651cf1805d25483f1c190d41c0b3}{\index{\-Simplex@{\-Simplex}!czasy\-Pracy@{czasy\-Pracy}}
+\index{czasy\-Pracy@{czasy\-Pracy}!Simplex@{\-Simplex}}
+\subsubsection[{czasy\-Pracy}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf \-Simplex\-::czasy\-Pracy}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_a274a651cf1805d25483f1c190d41c0b3}
+
+
+\-Definicja w linii 21 pliku simplex.\-h.
+
+\hypertarget{class_simplex_a05c1f84eee26b312e4f918016c435a48}{\index{\-Simplex@{\-Simplex}!czasy\-Produkcji@{czasy\-Produkcji}}
+\index{czasy\-Produkcji@{czasy\-Produkcji}!Simplex@{\-Simplex}}
+\subsubsection[{czasy\-Produkcji}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$double$>$ $>$ {\bf \-Simplex\-::czasy\-Produkcji}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_a05c1f84eee26b312e4f918016c435a48}
+
+
+\-Definicja w linii 22 pliku simplex.\-h.
+
+\hypertarget{class_simplex_a0f6d3ab52d2961e257233c81d4c64c81}{\index{\-Simplex@{\-Simplex}!l\-Fabryk@{l\-Fabryk}}
+\index{l\-Fabryk@{l\-Fabryk}!Simplex@{\-Simplex}}
+\subsubsection[{l\-Fabryk}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Simplex\-::l\-Fabryk}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_a0f6d3ab52d2961e257233c81d4c64c81}
+
+
+\-Definicja w linii 19 pliku simplex.\-h.
+
+\hypertarget{class_simplex_af05273be3561d707b029894f551bf1fc}{\index{\-Simplex@{\-Simplex}!l\-Produktow@{l\-Produktow}}
+\index{l\-Produktow@{l\-Produktow}!Simplex@{\-Simplex}}
+\subsubsection[{l\-Produktow}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf \-Simplex\-::l\-Produktow}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_af05273be3561d707b029894f551bf1fc}
+
+
+\-Definicja w linii 19 pliku simplex.\-h.
+
+\hypertarget{class_simplex_a542e1d670562fb3fa9f11546071c6738}{\index{\-Simplex@{\-Simplex}!max\-Zysk@{max\-Zysk}}
+\index{max\-Zysk@{max\-Zysk}!Simplex@{\-Simplex}}
+\subsubsection[{max\-Zysk}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf \-Simplex\-::max\-Zysk}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_a542e1d670562fb3fa9f11546071c6738}
+
+
+\-Definicja w linii 24 pliku simplex.\-h.
+
+\hypertarget{class_simplex_a18ae1c3fa2099205b28eb7200c061e9c}{\index{\-Simplex@{\-Simplex}!wynik@{wynik}}
+\index{wynik@{wynik}!Simplex@{\-Simplex}}
+\subsubsection[{wynik}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf \-Simplex\-::wynik}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_a18ae1c3fa2099205b28eb7200c061e9c}
+
+
+\-Definicja w linii 25 pliku simplex.\-h.
+
+\hypertarget{class_simplex_a3069699ee42dbdb3d94653cefcefd9cc}{\index{\-Simplex@{\-Simplex}!zysk\-Produktow@{zysk\-Produktow}}
+\index{zysk\-Produktow@{zysk\-Produktow}!Simplex@{\-Simplex}}
+\subsubsection[{zysk\-Produktow}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$double$>$ {\bf \-Simplex\-::zysk\-Produktow}\hspace{0.3cm}{\ttfamily  \mbox{[}private\mbox{]}}}}\label{class_simplex_a3069699ee42dbdb3d94653cefcefd9cc}
+
+
+\-Definicja w linii 20 pliku simplex.\-h.
+
+
+
+\-Dokumentacja dla tej klasy została wygenerowana z plików\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{simplex_8h}{simplex.\-h}\item 
+\hyperlink{simplex_8cpp}{simplex.\-cpp}\end{DoxyCompactItemize}

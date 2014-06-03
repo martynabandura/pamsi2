@@ -1,0 +1,79 @@
+/*!
+*\file
+*\brief Definicje poszczegolnych funkcji dla klasy Integral.
+*/
+#include "integral.h"
+
+
+
+// konstruktor - jedyne co robi to bierze wskaźnik do funkcji jako parametr i zapamiętuje tę funkcję w prywatnym polu obiektu
+Integral::Integral(double (*fn)(double)) {
+	f = fn;
+}
+
+
+// funkcja liczy całkę oznaczoną na przedziale [from; to]
+double Integral::DefiniteIntegral(double from, double to) {
+	double delta = (to-from) / PARTS_INTEGRAL;  // obliczamy co ile będzie musiał rosnąć argument co jeden skok (dzielimy przedział na równe części)
+	double result = 0.0;  // tutaj będzie wynik
+
+	if (from >= to)  // jeśli from >= to to nie ma sensu liczyć - wynik jest 0
+		return 0.0;
+
+	for (double x = from; x < to; x += delta)  // próbkujemy - tj. obliczamy wartości funkcji w 1000 różnych punktów
+		result += ((*f)(x) + (*f)(x+delta)) * delta / 2.0;  // i dodajemy do wyniku pole trapezu rozpiętego przez dwa kolejne wyniki funkcji
+
+	return result;
+}
+
+// funkcja liczy całkę nieoznaczoną na przedziale [from; to]
+// algorytm wygląda dość prosto:
+// dzielimy przedział na niekoniecznie równe przedziały, kolejne punkty podziału to kolejne potęgi dziesiątki
+// od -10^100 do 10^100
+// dla każdego kawałka liczymy wynik jako całkę oznaczoną
+// wynik całki przybliżamy sumą wszystkich całek oznaczonych poszczególnych kawałków.
+double Integral::IndefiniteIntegral(double from, double to) {
+	double result = 0.0;
+
+	if ((from == -INFINITY) && (to == INFINITY)) {  // przypadek pierwszy: oba końce są niewłaściwe
+		double x = -1.0;
+		for (int i = 1; i < 100; i++) {  // dodajemy całki dla argumentów [-10; -1], [-100; -10]; [-1000; -100] itd.
+			result += DefiniteIntegral(x * 10.0, x);
+			x *= 10.0;
+		}
+		result += DefiniteIntegral(-1.0, 1.0);  // dodajemy całkę [-1; 1]
+		x = 1.0;
+		for (int i = 1; i < 100; i++) {  // dodajemy całki dla argumentóœ [1; 10], [10; 100]; [100; 1000] itd.
+			result += DefiniteIntegral(x, x * 10.0);
+			x *= 10.0;
+		}
+		return result;
+	}
+	if (from == -INFINITY) {  // przypadek drugi: tylko początek jest niewłaściwy
+		double x = -1.0;
+		if (to > -1.0)  // dodajemy całkę [-1; to] o ile to > -1.0
+			result = DefiniteIntegral(-1.0, to);
+		else
+			x = to;
+
+		for (int i = 1; i < 100; i++) {  // dodajemy kolejne całki [-10*to; -to], [-100*to; -10*to] itd.
+			result += DefiniteIntegral(x * 10.0, x);
+			x *= 10.0;
+		}
+		return result;
+	}
+	if (to == INFINITY) {  // przypadek trzeci: tylko koniec jest niewłaściwy - przypadek analogiczny do drugiego
+		double x = 1.0;
+		if (from < 1.0)
+			result = DefiniteIntegral(from, 1.0);
+		else
+			x = from;
+
+		for (int i = 1; i < 100; i++) {
+			result += DefiniteIntegral(x, x * 10.0);
+			x *= 10.0;
+		}
+		return result;
+	}
+	return DefiniteIntegral(from, to);  // przypadek czwarty - oba końce właściwe, liczymy po prostu całkę oznaczoną
+}

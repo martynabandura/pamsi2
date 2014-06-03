@@ -1,0 +1,19 @@
+var NAVTREEINDEX =
+{
+"index.html":[],
+"annotated.html":[0,0],
+"class_simplex.html":[0,0,0],
+"classes.html":[0,1],
+"functions.html":[0,2,0],
+"functions_func.html":[0,2,1],
+"functions_vars.html":[0,2,2],
+"files.html":[1,0],
+"main_8cpp.html":[1,0,0],
+"simplex_8cpp.html":[1,0,1],
+"simplex_8h.html":[1,0,2],
+"globals.html":[1,1,0],
+"globals_func.html":[1,1,1],
+"globals_vars.html":[1,1,2],
+"dirs.html":[2],
+"dir_47c46492e3b1ef5451c835117c5beee7.html":[2,0]
+};

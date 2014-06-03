@@ -1,0 +1,21 @@
+#include <iostream>
+#include "integral.h"
+
+/*!
+* \file
+* \brief Plik zawiera glowna funkcje programu.
+*/
+
+using namespace std;
+
+double F(double x) {  // przykładowa funkcja dla której możemy chcieć policzyć całkę
+	return 1.0 / (x * x);
+}
+
+int main() {
+	Integral fnintegral = Integral(F);  // przekazujemy funkcję do konstruktora obiektu
+
+	cout << fnintegral.IndefiniteIntegral(-INFINITY, -2.0) << "\n";  // obliczamy całkę z 1/(x^2) od -INF do -2 (wynik powinien być 0.5)
+	
+	return 0;
+}

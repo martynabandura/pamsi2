@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>Calka: Plik źródłowy /home/martyna/Pulpit/calka/prj/integral.h</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Calka
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Wygenerowano przez Doxygen 1.7.6.1 -->
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Strona&#160;główna</span></a></li>
+      <li><a href="annotated.html"><span>Klasy</span></a></li>
+      <li class="current"><a href="files.html"><span>Pliki</span></a></li>
+      <li><a href="dirs.html"><span>Katalogi</span></a></li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;plików</span></a></li>
+      <li><a href="globals.html"><span>Składowe&#160;plików</span></a></li>
+    </ul>
+  </div>
+</div>
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+  initNavTree('integral_8h.html','');
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle">
+<div class="title">integral.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="integral_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
+<a name="l00005"></a>00005 <span class="preprocessor">#ifndef INTEGRAL</span>
+<a name="l00006"></a>00006 <span class="preprocessor"></span><span class="preprocessor">        #define INTEGRAL</span>
+<a name="l00007"></a>00007 <span class="preprocessor"></span>
+<a name="l00008"></a>00008 <span class="preprocessor">        #include &lt;cmath&gt;</span>  <span class="comment">// moduł potrzebny do różnych funkcji matematycznych typu sinus/pierwiastek itp.</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a><a class="code" href="integral_8h.html#ad13f184aae302a8bff8bb3dc3c176a24">00010</a>         <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="integral_8h.html#ad13f184aae302a8bff8bb3dc3c176a24">PARTS_INTEGRAL</a> = 1000;  <span class="comment">// liczba próbek (argumentów) w których obliczamy wartość funkcji dla całki oznaczonej</span>
+<a name="l00011"></a>00011 
+<a name="l00017"></a><a class="code" href="class_integral.html">00017</a>         <span class="keyword">class </span><a class="code" href="class_integral.html" title="Deklaracja klasy Integral.">Integral</a> {
+<a name="l00018"></a>00018                 <span class="keyword">private</span>:
+<a name="l00019"></a><a class="code" href="class_integral.html#a12d960433639c75917e0d0758498b0da">00019</a>                         double (*<a class="code" href="class_integral.html#a12d960433639c75917e0d0758498b0da">f</a>)(double);  <span class="comment">// funkcja, dla której obliczamy całki</span>
+<a name="l00020"></a>00020                 
+<a name="l00021"></a>00021                 <span class="keyword">public</span>:
+<a name="l00022"></a>00022                         <a class="code" href="class_integral.html#a3ba4abca152f119d4b95ad7e4dd7f43f">Integral</a>(<span class="keywordtype">double</span> (*<a class="code" href="class_integral.html#a12d960433639c75917e0d0758498b0da">f</a>)(<span class="keywordtype">double</span>));  <span class="comment">// konstruktor, który przyjmuje wskaźnik do funkcji i zapamiętuje go (w zmiennej opisanej powyżej)</span>
+<a name="l00023"></a>00023                         <span class="keywordtype">double</span> <a class="code" href="class_integral.html#a48e95c56d7710386a6cc7d4c43b618cd">DefiniteIntegral</a>(<span class="keywordtype">double</span> from, <span class="keywordtype">double</span> to);  <span class="comment">// funkcja obliczająca całki oznaczone na przedziale [ from ; to ]</span>
+<a name="l00024"></a>00024                         <span class="keywordtype">double</span> <a class="code" href="class_integral.html#ac91a8edc240a85b9efcfe3f3b75e585e">IndefiniteIntegral</a>(<span class="keywordtype">double</span> from, <span class="keywordtype">double</span> to);  <span class="comment">// funkcja obliczająca całki nieoznaczone na przedziale [ from ; to] (można wykorzystywać stałą INFINITY)</span>
+<a name="l00025"></a>00025         };
+<a name="l00026"></a>00026 <span class="preprocessor">#endif</span>
+</pre></div></div><!-- contents -->
+</div>
+  <div id="nav-path" class="navpath">
+    <ul>
+      <li class="navelem"><a class="el" href="integral_8h.html">integral.h</a>      </li>
+
+    <li class="footer">Wygenerowano Tue Jun 3 2014 17:27:10 dla Calka programem
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
+   </ul>
+ </div>
+
+
+</body>
+</html>
